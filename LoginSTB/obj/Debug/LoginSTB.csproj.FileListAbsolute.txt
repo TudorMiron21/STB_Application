@@ -1,0 +1,16 @@
+C:\Users\paulc\OneDrive\Desktop\Aplicatii_BD_lab\LoginSTB\LoginSTB\bin\Debug\LoginSTB.exe.config
+C:\Users\paulc\OneDrive\Desktop\Aplicatii_BD_lab\LoginSTB\LoginSTB\bin\Debug\LoginSTB.exe
+C:\Users\paulc\OneDrive\Desktop\Aplicatii_BD_lab\LoginSTB\LoginSTB\bin\Debug\LoginSTB.pdb
+C:\Users\paulc\OneDrive\Desktop\Aplicatii_BD_lab\LoginSTB\LoginSTB\obj\Debug\LoginSTB.csproj.AssemblyReference.cache
+C:\Users\paulc\OneDrive\Desktop\Aplicatii_BD_lab\LoginSTB\LoginSTB\obj\Debug\LoginSTB.csproj.SuggestedBindingRedirects.cache
+C:\Users\paulc\OneDrive\Desktop\Aplicatii_BD_lab\LoginSTB\LoginSTB\obj\Debug\MainWindow.g.cs
+C:\Users\paulc\OneDrive\Desktop\Aplicatii_BD_lab\LoginSTB\LoginSTB\obj\Debug\App.g.cs
+C:\Users\paulc\OneDrive\Desktop\Aplicatii_BD_lab\LoginSTB\LoginSTB\obj\Debug\LoginSTB_MarkupCompile.cache
+C:\Users\paulc\OneDrive\Desktop\Aplicatii_BD_lab\LoginSTB\LoginSTB\obj\Debug\LoginSTB_MarkupCompile.lref
+C:\Users\paulc\OneDrive\Desktop\Aplicatii_BD_lab\LoginSTB\LoginSTB\obj\Debug\MainWindow.baml
+C:\Users\paulc\OneDrive\Desktop\Aplicatii_BD_lab\LoginSTB\LoginSTB\obj\Debug\LoginSTB.g.resources
+C:\Users\paulc\OneDrive\Desktop\Aplicatii_BD_lab\LoginSTB\LoginSTB\obj\Debug\LoginSTB.Properties.Resources.resources
+C:\Users\paulc\OneDrive\Desktop\Aplicatii_BD_lab\LoginSTB\LoginSTB\obj\Debug\LoginSTB.csproj.GenerateResource.cache
+C:\Users\paulc\OneDrive\Desktop\Aplicatii_BD_lab\LoginSTB\LoginSTB\obj\Debug\LoginSTB.csproj.CoreCompileInputs.cache
+C:\Users\paulc\OneDrive\Desktop\Aplicatii_BD_lab\LoginSTB\LoginSTB\obj\Debug\LoginSTB.exe
+C:\Users\paulc\OneDrive\Desktop\Aplicatii_BD_lab\LoginSTB\LoginSTB\obj\Debug\LoginSTB.pdb
