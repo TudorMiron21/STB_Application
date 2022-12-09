@@ -32,7 +32,6 @@
                     <RowDefinition Height="*"/>
                 </Grid.RowDefinitions>
                 
-
                 <StackPanel Orientation="Vertical" VerticalAlignment="Top" Grid.Row="1" Width="500" Margin="0,70,0,0">
                     <StackPanel Orientation="Horizontal" VerticalAlignment="Top" HorizontalAlignment="Center">
                         <TextBlock Text="Username" Foreground="Black" FontSize="20" Margin="10,0,0,0" />
