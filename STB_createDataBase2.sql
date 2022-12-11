@@ -228,9 +228,61 @@ create table TicketHistory
 	constraint FK2_Ticket foreign key (RouteId) references Routes(RouteId)
 )
 
+
+
 USE [master]
 GO
 ALTER DATABASE [STB_app] SET  READ_WRITE 
 GO
 
+
+if OBJECT_ID('CardDetails', 'U') is not null
+drop table CardDetails
+go 
+create table CardDetails(
+
+	CardId int identity(1,1),
+	PersoanaId int not null,
+	NumarCard nvarchar(16)not null,
+	DataExpirare nvarchar(8)not null,
+	CVV nvarchar(3)not null,
+
+	constraint CHK1_CardDetails check (isnumeric(NumarCard) = 1 and len(NumarCard) = 16),
+	constraint CHK2_CardDetails check (isnumeric(CVV) = 1 and len(CVV) = 3),
+	constraint PK_CardDetails primary key (CardId),
+	constraint FK_CardDetails foreign key (PersoanaId) references Person(PersonId),
+
+)
+
+alter table Routes
+drop FK1_Route
+
+alter table Routes
+drop FK2_Route
+
+alter table Routes
+drop CHK_Route
+
+alter table Routes
+drop column StationDepartureId
+
+
+alter table Routes
+drop column StationArrivalId
+
+
+if OBJECT_ID('RefStationRoute', 'U') is not null
+drop table RefStationRoute
+go 
+create table RefStationRoute(
+
+	Id int identity(1,1),
+	RouteId int not null,
+	StationId int not null,
+
+	constraint PK_RefStRo primary key (Id),
+	constraint FK_Ref1 foreign key (RouteId) references Routes(RouteId),
+	constraint FK_Ref2 foreign key (StationId) references Stations(StationId)
+
+)
 
