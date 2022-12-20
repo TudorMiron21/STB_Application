@@ -24,6 +24,32 @@ namespace STB_App
             InitializeComponent();
         }
 
-  
+        private void close_Click(object sender, RoutedEventArgs e)
+        {
+            this.Close();
+        }
+
+        private void minimize_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void register_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void ComboBox1_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+
+        }
+
+        private void Window_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+            if (e.ChangedButton == MouseButton.Left)
+            {
+                this.DragMove();
+            }
+        }
     }
 }

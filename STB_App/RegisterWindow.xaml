@@ -43,8 +43,39 @@
                     </StackPanel>
                     <StackPanel Orientation="Horizontal" VerticalAlignment="Top" HorizontalAlignment="Center">
                         <TextBlock Text="Nume" Foreground="Black" FontSize="20" Margin="10,20,0,0" />
-                        <TextBox x:Name="Nume" Height="20" Width="200" Margin="20,20,0,0"/>
+                        <TextBox x:Name="Nume" Height="20" Width="200" Margin="50,20,0,0"/>
                     </StackPanel>
+                    <StackPanel Orientation="Horizontal" VerticalAlignment="Top" HorizontalAlignment="Center">
+                        <TextBlock Text="Prenume" Foreground="Black" FontSize="20" Margin="10,20,0,0" />
+                        <TextBox x:Name="Prenume" Height="20" Width="200" Margin="20,20,0,0"/>
+                    </StackPanel>
+
+                    <StackPanel  Orientation="Horizontal" VerticalAlignment="Top" HorizontalAlignment="Center">
+                        <TextBlock Text="Categorie" Foreground="Black" FontSize="20" Margin="10,20,0,0" />
+                        <ComboBox Margin="10,10,0,13" Name="ComboBox1" HorizontalAlignment="Left" VerticalAlignment="Top" Width="194" Height="30" SelectionChanged="ComboBox1_SelectionChanged">
+                        <ComboBoxItem Content="Student"></ComboBoxItem>
+                        <ComboBoxItem Content="Elev"></ComboBoxItem>
+                        <ComboBoxItem Content="Adult"></ComboBoxItem>
+                        <ComboBoxItem Content="Copil"></ComboBoxItem>
+                        <ComboBoxItem Content="Pensionar"></ComboBoxItem>
+                        </ComboBox>
+                    </StackPanel>
+
+                    <StackPanel Orientation="Horizontal" VerticalAlignment="Top" HorizontalAlignment="Center">
+                        <TextBlock Text="Numar Telefon" Foreground="Black" FontSize="20" Margin="10,20,0,0" />
+                        <TextBox x:Name="numar_telefon" Height="20" Width="200" Margin="20,20,0,0"/>
+                    </StackPanel>
+
+                    <StackPanel Orientation="Horizontal" VerticalAlignment="Top" HorizontalAlignment="Center">
+                        <TextBlock Text="Email" Foreground="Black" FontSize="20" Margin="10,20,0,0" />
+                        <TextBox x:Name="Email" Height="20" Width="200" Margin="20,20,0,0"/>
+                    </StackPanel>
+
+
+
+
+
+
                     <Button x:Name="register" Content="Register" Width="180" Height="30" Background="OrangeRed" Opacity="0.9" Click="register_Click">
                         <Button.Template>
                             <ControlTemplate TargetType="{x:Type Button}">
@@ -92,7 +123,7 @@
                 </StackPanel>
 
 
-                <StackPanel Orientation="Horizontal" Grid.Row="2"/>
+             <StackPanel Orientation="Horizontal" Grid.Row="2"/>
 
 
             </Grid>

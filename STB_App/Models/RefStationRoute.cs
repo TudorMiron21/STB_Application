@@ -7,16 +7,13 @@ using System.Collections.Generic;
 
 namespace STB_App.Models
 {
-    public partial class Stations
+    public partial class RefStationRoute
     {
-        public Stations()
-        {
-            RefStationRoute = new HashSet<RefStationRoute>();
-        }
-
+        public int Id { get; set; }
+        public int RouteId { get; set; }
         public int StationId { get; set; }
-        public string StationName { get; set; }
 
-        public virtual ICollection<RefStationRoute> RefStationRoute { get; set; }
+        public virtual Routes Route { get; set; }
+        public virtual Stations Station { get; set; }
     }
 }

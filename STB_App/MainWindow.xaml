@@ -43,7 +43,7 @@
                     </StackPanel>
 
 
-                    <Button x:Name="login" Width="180" Height="30" Margin="0,40,0,0" Background="OrangeRed" Opacity="0.7" Click="login_Click">
+                    <Button x:Name="login" Width="180" Height="30" Margin="0,40,0,0" Background="OrangeRed" Opacity="0.9" Click="login_Click" MouseEnter="login_MouseEnter" MouseLeave="login_MouseLeave">
                         <Button.Template>
                             <ControlTemplate TargetType="Button">
                                 <Border x:Name="border" Background="OrangeRed"  BorderBrush="Black" BorderThickness="1" CornerRadius="10">
@@ -60,7 +60,8 @@
                             </ControlTemplate>
                         </Button.Template>
                     </Button>
-                    <Button x:Name="register" Content="Register" Width="180" Height="30" Margin="0,15,0,0" Background="OrangeRed" Opacity="0.9" Click="register_Click">
+                    <Button x:Name="register" Content="Register" Width="180" Height="30" Margin="0,15,0,0" Background="OrangeRed" Opacity="0.9" Click="register_Click" MouseEnter="register_MouseEnter" MouseLeave="register_MouseLeave">
+
                         <Button.Template>
                             <ControlTemplate TargetType="Button">
                                 <Border x:Name="border" Background="OrangeRed"  BorderBrush="Black" BorderThickness="1" CornerRadius="10">
@@ -71,7 +72,7 @@
                                         <Setter TargetName="border" Property="Background" Value="Orange" />
                                     </Trigger>
                                     <Trigger Property="IsPressed" Value="True">
-                                        <Setter TargetName="border" Property="Background" Value="Purple" />
+                                        <Setter TargetName="border" Property="Background" Value="Azure" />
                                     </Trigger>
                                 </ControlTemplate.Triggers>
                             </ControlTemplate>
