@@ -19,9 +19,11 @@ namespace STB_App.Models
         {
         }
 
+        public virtual DbSet<CardDetails> CardDetails { get; set; }
         public virtual DbSet<Category> Category { get; set; }
         public virtual DbSet<Person> Person { get; set; }
         public virtual DbSet<RefRouteSubscription> RefRouteSubscription { get; set; }
+        public virtual DbSet<RefStationRoute> RefStationRoute { get; set; }
         public virtual DbSet<Routes> Routes { get; set; }
         public virtual DbSet<Stations> Stations { get; set; }
         public virtual DbSet<SubscriptionHistory> SubscriptionHistory { get; set; }
@@ -38,6 +40,30 @@ namespace STB_App.Models
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
+            modelBuilder.Entity<CardDetails>(entity =>
+            {
+                entity.HasKey(e => e.CardId);
+
+                entity.Property(e => e.Cvv)
+                    .IsRequired()
+                    .HasColumnName("CVV")
+                    .HasMaxLength(3);
+
+                entity.Property(e => e.DataExpirare)
+                    .IsRequired()
+                    .HasMaxLength(8);
+
+                entity.Property(e => e.NumarCard)
+                    .IsRequired()
+                    .HasMaxLength(16);
+
+                entity.HasOne(d => d.Persoana)
+                    .WithMany(p => p.CardDetails)
+                    .HasForeignKey(d => d.PersoanaId)
+                    .OnDelete(DeleteBehavior.ClientSetNull)
+                    .HasConstraintName("FK_CardDetails");
+            });
+
             modelBuilder.Entity<Category>(entity =>
             {
                 entity.Property(e => e.PersonType)
@@ -91,22 +117,25 @@ namespace STB_App.Models
                     .HasConstraintName("FK2_ref");
             });
 
+            modelBuilder.Entity<RefStationRoute>(entity =>
+            {
+                entity.HasOne(d => d.Route)
+                    .WithMany(p => p.RefStationRoute)
+                    .HasForeignKey(d => d.RouteId)
+                    .OnDelete(DeleteBehavior.ClientSetNull)
+                    .HasConstraintName("FK_Ref1");
+
+                entity.HasOne(d => d.Station)
+                    .WithMany(p => p.RefStationRoute)
+                    .HasForeignKey(d => d.StationId)
+                    .OnDelete(DeleteBehavior.ClientSetNull)
+                    .HasConstraintName("FK_Ref2");
+            });
+
             modelBuilder.Entity<Routes>(entity =>
             {
                 entity.HasKey(e => e.RouteId)
                     .HasName("PK_Route");
-
-                entity.HasOne(d => d.StationArrival)
-                    .WithMany(p => p.RoutesStationArrival)
-                    .HasForeignKey(d => d.StationArrivalId)
-                    .OnDelete(DeleteBehavior.ClientSetNull)
-                    .HasConstraintName("FK2_Route");
-
-                entity.HasOne(d => d.StationDeparture)
-                    .WithMany(p => p.RoutesStationDeparture)
-                    .HasForeignKey(d => d.StationDepartureId)
-                    .OnDelete(DeleteBehavior.ClientSetNull)
-                    .HasConstraintName("FK1_Route");
             });
 
             modelBuilder.Entity<Stations>(entity =>

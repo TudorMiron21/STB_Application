@@ -12,16 +12,14 @@ namespace STB_App.Models
         public Routes()
         {
             RefRouteSubscription = new HashSet<RefRouteSubscription>();
+            RefStationRoute = new HashSet<RefStationRoute>();
             TicketHistory = new HashSet<TicketHistory>();
         }
 
         public int RouteId { get; set; }
-        public int StationDepartureId { get; set; }
-        public int StationArrivalId { get; set; }
 
-        public virtual Stations StationArrival { get; set; }
-        public virtual Stations StationDeparture { get; set; }
         public virtual ICollection<RefRouteSubscription> RefRouteSubscription { get; set; }
+        public virtual ICollection<RefStationRoute> RefStationRoute { get; set; }
         public virtual ICollection<TicketHistory> TicketHistory { get; set; }
     }
 }

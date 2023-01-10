@@ -3,18 +3,24 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
         xmlns:local="clr-namespace:STB_App"
         mc:Ignorable="d"
         WindowStyle="None"
         AllowsTransparency="True"
         Background="Transparent"
-        Title="MainWindow" Height="547" Width="963" 
+        Title="MainWindow"
+        Height="547"
+        Width="963"
         MouseDown="Window_MouseDown">
 
 
-    <Border x:Name="BorderImg" CornerRadius="30" >
+    <Border x:Name="BorderImg"
+            CornerRadius="30">
         <Border.Background>
-            <ImageBrush ImageSource="Images\loginImg.png" Stretch="UniformToFill" AlignmentY="Top"/>
+            <ImageBrush ImageSource="Images\loginImg.png"
+                        Stretch="UniformToFill"
+                        AlignmentY="Top" />
         </Border.Background>
 
 
@@ -22,41 +28,224 @@
         <Border CornerRadius="30">
 
             <Border.Background>
-                <SolidColorBrush Color="#FF62704D" Opacity="0.9"/>
+                <SolidColorBrush Color="#FF62704D"
+                                 Opacity="0.9" />
             </Border.Background>
-            <Grid >
-                <Grid.RowDefinitions >
-                    <RowDefinition  Height="25"/>
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition  Height="25" />
 
-                    <RowDefinition Height="420"/>
-                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="500" />
+                    <RowDefinition Height="*" />
                 </Grid.RowDefinitions>
 
-                <StackPanel Orientation="Vertical" VerticalAlignment="Top" Grid.Row="1" Width="500" Margin="0,70,0,0">
-                    <StackPanel Orientation="Horizontal" VerticalAlignment="Top" HorizontalAlignment="Center">
-                        <TextBlock Text="Username" Foreground="Black" FontSize="20" Margin="10,0,0,0" />
-                        <TextBox x:Name="Username" Height="20" Width="200" Margin="15,0,0,0"/>
+                <StackPanel Orientation="Vertical"
+                            VerticalAlignment="Top"
+                            Grid.Row="1"
+                            Width="500"
+                            Margin="232,50,231,0"
+                            Height="450">
+                    <StackPanel Orientation="Horizontal"
+                                VerticalAlignment="Top"
+                                HorizontalAlignment="Center">
+
+                        <TextBlock Text="Username"
+                                   Foreground="AntiqueWhite"
+                                   FontSize="15"
+                                   Margin="10,15,0,0" />
+                        <TextBox x:Name="Username"
+                                 Height="30"
+                                 Width="200"
+                                 Foreground="AntiqueWhite"
+                                 Margin="15,5,0,5"
+                                 FontSize="15"
+                                 TextChanged="Username_TextChanged" />
                     </StackPanel>
-                    <StackPanel Orientation="Horizontal" VerticalAlignment="Top" HorizontalAlignment="Center">
-                        <TextBlock Text="Password" Foreground="Black" FontSize="20" Margin="10,20,0,0" />
-                        <TextBox x:Name="Password" Height="20" Width="200" Margin="20,20,0,0"/>
+
+                    <StackPanel>
+                        <TextBlock x:Name="userError"
+                                   Text="Username-ul exista deja!"
+                                   FontSize="9"
+                                   Foreground="#FFF9D31B"
+                                   HorizontalAlignment="Center"
+                                   Margin="60,2,0,0"
+                                   Visibility="Hidden" />
                     </StackPanel>
-                    <StackPanel Orientation="Horizontal" VerticalAlignment="Top" HorizontalAlignment="Center">
-                        <TextBlock Text="Nume" Foreground="Black" FontSize="20" Margin="10,20,0,0" />
-                        <TextBox x:Name="Nume" Height="20" Width="200" Margin="20,20,0,0"/>
+                    <StackPanel Orientation="Horizontal"
+                                Height="52"
+                                Width="333">
+                        <TextBlock Text="Parola"
+                                   Foreground="AntiqueWhite"
+                                   FontSize="15"
+                                   Margin="55,10,0,5"
+                                   Height="23" />
+                        <StackPanel>
+                            <PasswordBox Style="{StaticResource MaterialDesignFloatingHintRevealPasswordBox}"
+                                         x:Name="Password"
+                                         materialDesign:ColorZoneAssist.Background="Black"
+                                         materialDesign:HintAssist.Hint="Password"
+                                         materialDesign:TextFieldAssist.HasClearButton="True"
+                                         Height="35"
+                                         Width="200"
+                                         Margin="18,0,10,5"
+                                         Foreground="AntiqueWhite"
+                                        
+                                         AutomationProperties.IsColumnHeader="True"
+                                         PasswordChanged="Password_changed" />
+
+                            <StackPanel>
+                                <TextBlock x:Name="passError"
+                                           Text="Cel putin 8 caractere!"
+                                           FontSize="9"
+                                           Foreground="#FFF9D31B"
+                                           Visibility="Hidden"
+                                           Margin="50,0,0,5" />
+                            </StackPanel>
+                            
+                            
+                        </StackPanel>
+
                     </StackPanel>
-                    <Button x:Name="register" Content="Register" Width="180" Height="30" Background="OrangeRed" Opacity="0.9" Click="register_Click">
+
+                    <StackPanel Orientation="Horizontal"
+                                HorizontalAlignment="Center"
+                                Width="315"
+                                Margin="0,5,0,0"
+                                >
+                        <TextBlock Text="Nume"
+                                   Foreground="AntiqueWhite"
+                                   FontSize="15"
+                                   Margin="45,10,5,5" />
+                        <TextBox x:Name="Nume"
+                                 Height="30"
+                                 Width="200"
+                                 FontSize="15"
+                                 Margin="15,5,0,5"
+                                 Foreground="AntiqueWhite"
+                                 TextChanged="Nume_TextChanged" />
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal"
+                                HorizontalAlignment="Center"
+                                Height="42"
+                                Width="294">
+                        <TextBlock Text="Prenume"
+                                   Foreground="AntiqueWhite"
+                                   FontSize="15"
+                                   Margin="17,12,0,0" />
+                        <TextBox x:Name="Prenume"
+                                 Height="30"
+                                 Width="200"
+                                 FontSize="15"
+                                 Foreground="AntiqueWhite"
+                                 Margin="20,5,0,5" />
+                    </StackPanel>
+                    <StackPanel  Orientation="Horizontal"
+                                 Height="73"
+                                 Width="320">
+                        <TextBlock Text="Categorie"
+                                   Foreground="AntiqueWhite"
+                                   FontSize="15"
+                                   Margin="20,20,0,0" />
+                        <!--<ComboBox x:Name="ComboBox1"
+                                  
+                                  Width="194"
+                                  Height="30"
+                                  SelectionChanged="ComboBox1_SelectionChanged">
+                            <ComboBoxItem Content="Student" />
+                            <ComboBoxItem Content="Elev" />
+                            <ComboBoxItem Content="Adult" />
+                            <ComboBoxItem Content="Copil" />
+                            <ComboBoxItem Content="Pensionar" />
+                        </ComboBox>-->
+                        <ComboBox x:Name="Category"
+                                  Style="{StaticResource MaterialDesignOutlinedComboBox}"
+                                  materialDesign:HintAssist.Hint="Selecteaza o categorie..."
+                                  materialDesign:HintAssist.Foreground="AntiqueWhite"
+                                  ItemsSource="{Binding ShortStringList}"
+                                  materialDesign:TextFieldAssist.HasClearButton="True"
+                                  Height="50"
+                                  Foreground="Black"
+                                  Width="200"
+                                  SelectionChanged="Category_SelectionChanged"
+                                  Margin="25,0,0,0">
+                            <ComboBoxItem Content="Student" />
+                            <ComboBoxItem Content="Elev" />
+                            <ComboBoxItem Content="Adult" />
+                            <ComboBoxItem Content="Copil" />
+                            <ComboBoxItem Content="Pensionar" />
+
+                            <!--<colorsDomain:NotEmptyValidationRule ValidatesOnTargetUpdated="True"
+                                                                             
+                                        xmlns:colorsDomain="clr-namespace:MaterialDesignDemo.Domain" />
+                                        -->
+                        </ComboBox>
+                    </StackPanel>
+
+                    <StackPanel Orientation="Horizontal"
+                                HorizontalAlignment="Center"
+                                Width="334">
+                        <TextBlock Text="Numar Telefon"
+                                   Foreground="AntiqueWhite"
+                                   FontSize="15"
+                                   Margin="0,6,12,0" />
+                        <TextBox x:Name="Telefon"
+                                 Height="30"
+                                 Width="200"
+                                 FontSize="15"
+                                 Foreground="AntiqueWhite"
+                                 Margin="5,5,5,5"
+                                 TextChanged="Telefon_TextChanged" />
+                    </StackPanel>
+
+                    <StackPanel Orientation="Horizontal"
+                                HorizontalAlignment="Center"
+                                Width="333">
+                        <TextBlock Text="Email"
+                                   Foreground="AntiqueWhite"
+                                   FontSize="15"
+                                   Margin="60,15,0,5" />
+                        <TextBox x:Name="Email"
+                                 Height="30"
+                                 Width="200"
+                                 FontSize="15"
+                                 Foreground="AntiqueWhite"
+                                 Margin="20,5,0,5"
+                                 TextChanged="Email_TextChanged" />
+                    </StackPanel>
+
+
+
+                    <Button x:Name="register"
+                            Content="Register"
+                            Width="180"
+                            Height="30"
+                            Background="OrangeRed"
+                            Opacity="0.9"
+                            Click="register_Click"
+                            Margin="0,50,0,0">
                         <Button.Template>
                             <ControlTemplate TargetType="{x:Type Button}">
-                                <Border x:Name="border" Background="OrangeRed"  BorderBrush="Black" BorderThickness="1" CornerRadius="10">
-                                    <ContentPresenter Content="Register" HorizontalAlignment="Center" VerticalAlignment="Center" />
+                                <Border x:Name="border"
+                                        Background="LightGray"
+                                        BorderBrush="Black"
+                                        BorderThickness="1"
+                                        CornerRadius="10">
+                                    <ContentPresenter Content="Register"
+                                                      HorizontalAlignment="Center"
+                                                      VerticalAlignment="Center" />
                                 </Border>
                                 <ControlTemplate.Triggers>
-                                    <Trigger Property="IsMouseOver" Value="True">
-                                        <Setter TargetName="border" Property="Background" Value="Orange" />
+                                    <Trigger Property="IsMouseOver"
+                                             Value="True">
+                                        <Setter TargetName="border"
+                                                Property="Background"
+                                                Value="Orange" />
                                     </Trigger>
-                                    <Trigger Property="IsPressed" Value="True">
-                                        <Setter TargetName="border" Property="Background" Value="Purple" />
+                                    <Trigger Property="IsPressed"
+                                             Value="True">
+                                        <Setter TargetName="border"
+                                                Property="Background"
+                                                Value="Purple" />
                                     </Trigger>
                                 </ControlTemplate.Triggers>
                             </ControlTemplate>
@@ -65,23 +254,41 @@
                 </StackPanel>
 
 
-                <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" >
-                    <Button x:Name="minimize" Content="____" Width="20" Height="20" Margin="0,5,10,0" Background="Orange" Click="minimize_Click">
+                <StackPanel Orientation="Horizontal"
+                            HorizontalAlignment="Right">
+                    <Button x:Name="minimize"
+                            Content="____"
+                            Width="20"
+                            Height="20"
+                            Margin="0,5,10,0"
+                            Background="Orange"
+                            Click="minimize_Click">
                         <Button.Template>
                             <ControlTemplate TargetType="Button">
-                                <Border CornerRadius="10" Background="Orange">
+                                <Border CornerRadius="10"
+                                        Background="Orange">
                                 </Border>
                             </ControlTemplate>
                         </Button.Template>
                     </Button>
-                    <Button x:Name="close" Content="Close" Width="20" Height="20" Margin="0,5,20,0" Click="close_Click">
+                    <Button x:Name="close"
+                            Content="Close"
+                            Width="20"
+                            Height="20"
+                            Margin="0,5,20,0"
+                            Click="close_Click">
                         <Button.Template>
                             <ControlTemplate TargetType="Button">
-                                <Border x:Name="border" CornerRadius="10" Background="Red">
+                                <Border x:Name="border"
+                                        CornerRadius="10"
+                                        Background="Red">
                                 </Border>
                                 <ControlTemplate.Triggers>
-                                    <Trigger Property="IsMouseOver" Value="True">
-                                        <Setter TargetName="border" Property="Background" Value="OrangeRed" />
+                                    <Trigger Property="IsMouseOver"
+                                             Value="True">
+                                        <Setter TargetName="border"
+                                                Property="Background"
+                                                Value="OrangeRed" />
                                     </Trigger>
                                 </ControlTemplate.Triggers>
                             </ControlTemplate>
@@ -92,7 +299,8 @@
                 </StackPanel>
 
 
-                <StackPanel Orientation="Horizontal" Grid.Row="2"/>
+                <StackPanel Orientation="Horizontal"
+                            Grid.Row="2" />
 
 
             </Grid>

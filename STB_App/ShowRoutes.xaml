@@ -1,0 +1,75 @@
+﻿<Window x:Class="STB_App.ShowRoutes"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:STB_App"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        mc:Ignorable="d"
+        WindowStyle="None"
+        AllowsTransparency="True"
+        Background="Transparent"
+        Title="MainWindow"
+        Height="547"
+        Width="963"
+        >
+
+
+    <Border x:Name="BorderImg"
+            CornerRadius="30">
+        <Border.Background>
+            <ImageBrush ImageSource="Images\loginImg.png"
+                        Stretch="UniformToFill"
+                        AlignmentY="Top" />
+        </Border.Background>
+
+
+
+        <Border CornerRadius="30">
+
+            <Border.Background>
+                <SolidColorBrush Color="#FF62704D"
+                                 Opacity="0.9" />
+            </Border.Background>
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition  Height="25" />
+                    <RowDefinition Height="420" />
+                    <RowDefinition Height="*" />
+                </Grid.RowDefinitions>
+                <Grid />
+                <DataGrid x:Name="DataGridRute"
+                          Margin="117,0,117,119"
+                          Background="LightGray"
+                          
+                          Grid.Row="1" />
+
+
+                
+                <Grid Width="124"
+                      Grid.Row="2"
+                      >
+                    <Button Style="{StaticResource MaterialDesignOutlinedButton}"
+                            materialDesign:ButtonProgressAssist.Value="-1"
+                            materialDesign:ButtonProgressAssist.IsIndicatorVisible="True"
+                            materialDesign:ButtonProgressAssist.IsIndeterminate="True"
+                            Content="Back"
+                            Background="OrangeRed"
+                            Foreground="White"
+                          
+                            Margin="2,0"
+                            IsEnabled="{Binding DataContext.ControlsEnabled, RelativeSource={RelativeSource FindAncestor, AncestorType=Window}}"
+                            Click="BackButton" />
+                   
+                 
+                </Grid>
+
+
+            </Grid>
+
+        </Border>
+
+
+    </Border>
+
+</Window>

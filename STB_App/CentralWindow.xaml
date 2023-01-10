@@ -1,0 +1,222 @@
+﻿<Window x:Class="STB_App.CentralWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        xmlns:local="clr-namespace:STB_App"
+        mc:Ignorable="d"
+        WindowStyle="None"
+        AllowsTransparency="True"
+        Background="Transparent"
+        Title="MainWindow" Height="547" Width="963" 
+        MouseDown="Window_MouseDown">
+    
+        
+
+
+    <Border x:Name="BorderImg" CornerRadius="30" >
+        <Border.Background>
+            <ImageBrush ImageSource="Images\loginImg.png" Stretch="UniformToFill" AlignmentY="Top"/>
+        </Border.Background>
+
+
+
+        <Border CornerRadius="30">
+
+            <Border.Background>
+                <SolidColorBrush Color="#FF62704D" Opacity="0.9"/>
+            </Border.Background>
+            <Grid >
+                <Grid.RowDefinitions >
+                    <RowDefinition  Height="25"/>
+
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="25"/>
+                </Grid.RowDefinitions>
+
+                <Grid >
+                    <Button Style="{StaticResource MaterialDesignRaisedAccentButton}"
+                            materialDesign:ButtonAssist.CornerRadius="25 25 0 0"
+                            ToolTip="MaterialDesignRaisedAccentButton with Round Top Corners"
+                            Width="100"
+                            Height="28"
+                            Background="AliceBlue"
+                            IsEnabled="{Binding DataContext.ControlsEnabled, RelativeSource={RelativeSource FindAncestor, AncestorType=Window}}"
+                            Margin="0,0,863,0"
+                            Click="Button_Click">
+                        <TextBlock Text="Log out"  />
+                    </Button>
+                </Grid>
+
+                <StackPanel Orientation="Vertical" VerticalAlignment="Top" Grid.Row="1" Width="500" Margin="0,70,0,0">
+                    <Button x:Name="BuyTicket" Width="180" Height="30" Margin="0,40,0,0" Background="OrangeRed" Opacity="0.9" Click="buy_ticket_Click" Content="Cumpara Bilet">
+                        <Button.Template>
+                            <ControlTemplate TargetType="Button">
+                                <Border x:Name="border" Background="OrangeRed"  BorderBrush="Black" BorderThickness="1" CornerRadius="10">
+                                    <ContentPresenter Content="Cumpara Bilet" HorizontalAlignment="Center" VerticalAlignment="Center" />
+                                </Border>
+                                <ControlTemplate.Triggers>
+                                    <Trigger Property="IsMouseOver" Value="True">
+                                        <Setter TargetName="border" Property="Background" Value="Orange" />
+                                    </Trigger>
+                                    <Trigger Property="IsPressed" Value="True">
+                                        <Setter TargetName="border" Property="Background" Value="Azure" />
+                                    </Trigger>
+                                </ControlTemplate.Triggers>
+                            </ControlTemplate>
+                        </Button.Template>
+                    </Button>
+                    <Button x:Name="BuySubscription" Content="Register" Width="180" Height="30" Margin="0,15,0,0" Background="OrangeRed" Opacity="0.9" Click="buy_subscription_Click">
+                        <Button.Template>
+                            <ControlTemplate TargetType="Button">
+                                <Border x:Name="border" Background="OrangeRed"  BorderBrush="Black" BorderThickness="1" CornerRadius="10">
+                                    <ContentPresenter Content="Cumpara Abonament" HorizontalAlignment="Center" VerticalAlignment="Center" />
+                                </Border>
+                                <ControlTemplate.Triggers>
+                                    <Trigger Property="IsMouseOver" Value="True">
+                                        <Setter TargetName="border" Property="Background" Value="Orange" />
+                                    </Trigger>
+                                    <Trigger Property="IsPressed" Value="True">
+                                        <Setter TargetName="border" Property="Background" Value="Azure" />
+                                    </Trigger>
+                                </ControlTemplate.Triggers>
+                            </ControlTemplate>
+                        </Button.Template>
+                    </Button>
+                    <Button x:Name="TicketHistory" Content="Register" Width="180" Height="30" Margin="0,15,0,0" Background="OrangeRed" Opacity="0.9" Click="ticket_history_Click">
+                        <Button.Template>
+                            <ControlTemplate TargetType="Button">
+                                <Border x:Name="border" Background="OrangeRed"  BorderBrush="Black" BorderThickness="1" CornerRadius="10">
+                                    <ContentPresenter Content="Istoric Bilete" HorizontalAlignment="Center" VerticalAlignment="Center" />
+                                </Border>
+                                <ControlTemplate.Triggers>
+                                    <Trigger Property="IsMouseOver" Value="True">
+                                        <Setter TargetName="border" Property="Background" Value="Orange" />
+                                    </Trigger>
+                                    <Trigger Property="IsPressed" Value="True">
+                                        <Setter TargetName="border" Property="Background" Value="Azure" />
+                                    </Trigger>
+                                </ControlTemplate.Triggers>
+                            </ControlTemplate>
+                        </Button.Template>
+                    </Button>
+                    <Button x:Name="SubscriptionHistory" Content="Register" Width="180" Height="30" Margin="0,15,0,0" Background="OrangeRed" Opacity="0.9" Click="subscription_history_Click">
+                        <Button.Template>
+                            <ControlTemplate TargetType="Button">
+                                <Border x:Name="border" Background="OrangeRed"  BorderBrush="Black" BorderThickness="1" CornerRadius="10">
+                                    <ContentPresenter Content="Istoric Abonamente" HorizontalAlignment="Center" VerticalAlignment="Center" />
+                                </Border>
+                                <ControlTemplate.Triggers>
+                                    <Trigger Property="IsMouseOver" Value="True">
+                                        <Setter TargetName="border" Property="Background" Value="Orange" />
+                                    </Trigger>
+                                    <Trigger Property="IsPressed" Value="True">
+                                        <Setter TargetName="border" Property="Background" Value="Azure" />
+                                    </Trigger>
+                                </ControlTemplate.Triggers>
+                            </ControlTemplate>
+                        </Button.Template>
+                    </Button>
+                    
+                    <Button x:Name="MyProfile" Content="Register" Width="180" Height="30" Margin="0,15,0,0" Background="OrangeRed" Opacity="0.9" Click="my_profile_Click">
+                        <Button.Template>
+                            <ControlTemplate TargetType="Button">
+                                <Border x:Name="border" Background="OrangeRed"  BorderBrush="Black" BorderThickness="1" CornerRadius="10">
+                                    <ContentPresenter Content="Profilul meu" HorizontalAlignment="Center" VerticalAlignment="Center" />
+                                </Border>
+                                <ControlTemplate.Triggers>
+                                    <Trigger Property="IsMouseOver" Value="True">
+                                        <Setter TargetName="border" Property="Background" Value="Orange" />
+                                    </Trigger>
+                                    <Trigger Property="IsPressed" Value="True">
+                                        <Setter TargetName="border" Property="Background" Value="Azure" />
+                                    </Trigger>
+                                </ControlTemplate.Triggers>
+                            </ControlTemplate>
+                        </Button.Template>
+                    </Button>
+                    <Button x:Name="InsertCardData" Content="Introduceti Date Card" Width="180" Height="30" Margin="0,15,0,0" Background="OrangeRed" Opacity="0.9" Click="insert_card_Click">
+                        <Button.Template>
+                            <ControlTemplate TargetType="Button">
+                                <Border x:Name="border" Background="OrangeRed"  BorderBrush="Black" BorderThickness="1" CornerRadius="10">
+                                    <ContentPresenter Content="Introduceti Date Card" HorizontalAlignment="Center" VerticalAlignment="Center" />
+                                </Border>
+                                <ControlTemplate.Triggers>
+                                    <Trigger Property="IsMouseOver" Value="True">
+                                        <Setter TargetName="border" Property="Background" Value="Orange" />
+                                    </Trigger>
+                                    <Trigger Property="IsPressed" Value="True">
+                                        <Setter TargetName="border" Property="Background" Value="Azure" />
+                                    </Trigger>
+                                </ControlTemplate.Triggers>
+                            </ControlTemplate>
+                        </Button.Template>
+                    </Button>
+                    <Button x:Name="ViewRoutes" Content="Vezi Rute" Width="180" Height="30" Margin="0,15,0,0" Background="OrangeRed" Opacity="0.9" Click="view_routes_Click">
+                        <Button.Template>
+                            <ControlTemplate TargetType="Button">
+                                <Border x:Name="border" Background="OrangeRed"  BorderBrush="Black" BorderThickness="1" CornerRadius="10">
+                                    <ContentPresenter Content="Vezi Rute" HorizontalAlignment="Center" VerticalAlignment="Center" />
+                                </Border>
+                                <ControlTemplate.Triggers>
+                                    <Trigger Property="IsMouseOver" Value="True">
+                                        <Setter TargetName="border" Property="Background" Value="Orange" />
+                                    </Trigger>
+                                    <Trigger Property="IsPressed" Value="True">
+                                        <Setter TargetName="border" Property="Background" Value="Azure" />
+                                    </Trigger>
+                                </ControlTemplate.Triggers>
+                            </ControlTemplate>
+                        </Button.Template>
+                    </Button>
+                </StackPanel>
+
+
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" >
+                    <Button x:Name="minimize" Content="____" Width="20" Height="20" Margin="0,5,10,0" Background="Orange" Click="minimize_Click">
+                        <Button.Template>
+                            <ControlTemplate TargetType="Button">
+                                <Border CornerRadius="10" Background="Orange">
+                                </Border>
+                            </ControlTemplate>
+                        </Button.Template>
+                    </Button>
+                    <Button x:Name="close"
+                            Content="Close"
+                            Width="20"
+                            Height="20"
+                            Margin="0,5,20,0"
+                            Click="close_Click">
+                        <Button.Template>
+                            <ControlTemplate TargetType="Button">
+                                <Border x:Name="border"
+                                        CornerRadius="10"
+                                        Background="Red">
+                                </Border>
+                                <ControlTemplate.Triggers>
+                                    <Trigger Property="IsMouseOver"
+                                             Value="True">
+                                        <Setter TargetName="border"
+                                                Property="Background"
+                                                Value="OrangeRed" />
+                                    </Trigger>
+                                </ControlTemplate.Triggers>
+                            </ControlTemplate>
+
+                        </Button.Template>
+
+                    </Button>
+
+                </StackPanel>
+
+
+
+            </Grid>
+
+        </Border>
+
+
+    </Border>
+
+</Window>

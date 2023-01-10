@@ -11,14 +11,12 @@ namespace STB_App.Models
     {
         public Stations()
         {
-            RoutesStationArrival = new HashSet<Routes>();
-            RoutesStationDeparture = new HashSet<Routes>();
+            RefStationRoute = new HashSet<RefStationRoute>();
         }
 
         public int StationId { get; set; }
         public string StationName { get; set; }
 
-        public virtual ICollection<Routes> RoutesStationArrival { get; set; }
-        public virtual ICollection<Routes> RoutesStationDeparture { get; set; }
+        public virtual ICollection<RefStationRoute> RefStationRoute { get; set; }
     }
 }

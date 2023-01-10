@@ -11,6 +11,7 @@ namespace STB_App.Models
     {
         public Person()
         {
+            CardDetails = new HashSet<CardDetails>();
             SubscriptionHistory = new HashSet<SubscriptionHistory>();
             TicketHistory = new HashSet<TicketHistory>();
         }
@@ -25,6 +26,7 @@ namespace STB_App.Models
         public string PhoneNumber { get; set; }
 
         public virtual Category Category { get; set; }
+        public virtual ICollection<CardDetails> CardDetails { get; set; }
         public virtual ICollection<SubscriptionHistory> SubscriptionHistory { get; set; }
         public virtual ICollection<TicketHistory> TicketHistory { get; set; }
     }
