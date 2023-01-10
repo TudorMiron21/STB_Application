@@ -1,0 +1,4 @@
+Daca biletele pot avea preturi diferite in functie de categorie acesta trebuie salvat in tabelul categoryId
+La fel e si cu pretul abonamentelor care difera de la categoria de persoana
+Am adaugat la rute inca o coloana pentru ca nu avem cum sa inseram in tabel daca avem doar pk
+Cum transmit id-ul persoanei care este conectata dintr-o clasa in alta

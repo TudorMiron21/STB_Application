@@ -1,0 +1,219 @@
+C:\Users\Tudor\Desktop\Facultate\anul 3\App_BD\App_stb\STB_App\STB_App\bin\Debug\STB_App.exe.config
+C:\Users\Tudor\Desktop\Facultate\anul 3\App_BD\App_stb\STB_App\STB_App\bin\Debug\STB_App.exe
+C:\Users\Tudor\Desktop\Facultate\anul 3\App_BD\App_stb\STB_App\STB_App\bin\Debug\STB_App.pdb
+C:\Users\Tudor\Desktop\Facultate\anul 3\App_BD\App_stb\STB_App\STB_App\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\Tudor\Desktop\Facultate\anul 3\App_BD\App_stb\STB_App\STB_App\bin\Debug\Microsoft.Bcl.HashCode.dll
+C:\Users\Tudor\Desktop\Facultate\anul 3\App_BD\App_stb\STB_App\STB_App\bin\Debug\Microsoft.Data.SqlClient.dll
+C:\Users\Tudor\Desktop\Facultate\anul 3\App_BD\App_stb\STB_App\STB_App\bin\Debug\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\Tudor\Desktop\Facultate\anul 3\App_BD\App_stb\STB_App\STB_App\bin\Debug\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\Tudor\Desktop\Facultate\anul 3\App_BD\App_stb\STB_App\STB_App\bin\Debug\Microsoft.EntityFrameworkCore.dll
+C:\Users\Tudor\Desktop\Facultate\anul 3\App_BD\App_stb\STB_App\STB_App\bin\Debug\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\Tudor\Desktop\Facultate\anul 3\App_BD\App_stb\STB_App\STB_App\bin\Debug\Microsoft.EntityFrameworkCore.SqlServer.dll
+C:\Users\Tudor\Desktop\Facultate\anul 3\App_BD\App_stb\STB_App\STB_App\bin\Debug\Microsoft.Extensions.Caching.Abstractions.dll
+C:\Users\Tudor\Desktop\Facultate\anul 3\App_BD\App_stb\STB_App\STB_App\bin\Debug\Microsoft.Extensions.Caching.Memory.dll
+C:\Users\Tudor\Desktop\Facultate\anul 3\App_BD\App_stb\STB_App\STB_App\bin\Debug\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Users\Tudor\Desktop\Facultate\anul 3\App_BD\App_stb\STB_App\STB_App\bin\Debug\Microsoft.Extensions.Configuration.Binder.dll
+C:\Users\Tudor\Desktop\Facultate\anul 3\App_BD\App_stb\STB_App\STB_App\bin\Debug\Microsoft.Extensions.Configuration.dll
+C:\Users\Tudor\Desktop\Facultate\anul 3\App_BD\App_stb\STB_App\STB_App\bin\Debug\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\Tudor\Desktop\Facultate\anul 3\App_BD\App_stb\STB_App\STB_App\bin\Debug\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\Tudor\Desktop\Facultate\anul 3\App_BD\App_stb\STB_App\STB_App\bin\Debug\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\Tudor\Desktop\Facultate\anul 3\App_BD\App_stb\STB_App\STB_App\bin\Debug\Microsoft.Extensions.Logging.dll
+C:\Users\Tudor\Desktop\Facultate\anul 3\App_BD\App_stb\STB_App\STB_App\bin\Debug\Microsoft.Extensions.Options.dll
+C:\Users\Tudor\Desktop\Facultate\anul 3\App_BD\App_stb\STB_App\STB_App\bin\Debug\Microsoft.Extensions.Primitives.dll
+C:\Users\Tudor\Desktop\Facultate\anul 3\App_BD\App_stb\STB_App\STB_App\bin\Debug\Microsoft.Identity.Client.dll
+C:\Users\Tudor\Desktop\Facultate\anul 3\App_BD\App_stb\STB_App\STB_App\bin\Debug\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\Tudor\Desktop\Facultate\anul 3\App_BD\App_stb\STB_App\STB_App\bin\Debug\Microsoft.IdentityModel.Logging.dll
+C:\Users\Tudor\Desktop\Facultate\anul 3\App_BD\App_stb\STB_App\STB_App\bin\Debug\Microsoft.IdentityModel.Protocols.dll
+C:\Users\Tudor\Desktop\Facultate\anul 3\App_BD\App_stb\STB_App\STB_App\bin\Debug\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\Tudor\Desktop\Facultate\anul 3\App_BD\App_stb\STB_App\STB_App\bin\Debug\Microsoft.IdentityModel.Tokens.dll
+C:\Users\Tudor\Desktop\Facultate\anul 3\App_BD\App_stb\STB_App\STB_App\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Tudor\Desktop\Facultate\anul 3\App_BD\App_stb\STB_App\STB_App\bin\Debug\System.Buffers.dll
+C:\Users\Tudor\Desktop\Facultate\anul 3\App_BD\App_stb\STB_App\STB_App\bin\Debug\System.Collections.Immutable.dll
+C:\Users\Tudor\Desktop\Facultate\anul 3\App_BD\App_stb\STB_App\STB_App\bin\Debug\System.ComponentModel.Annotations.dll
+C:\Users\Tudor\Desktop\Facultate\anul 3\App_BD\App_stb\STB_App\STB_App\bin\Debug\System.Diagnostics.DiagnosticSource.dll
+C:\Users\Tudor\Desktop\Facultate\anul 3\App_BD\App_stb\STB_App\STB_App\bin\Debug\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\Tudor\Desktop\Facultate\anul 3\App_BD\App_stb\STB_App\STB_App\bin\Debug\System.Memory.dll
+C:\Users\Tudor\Desktop\Facultate\anul 3\App_BD\App_stb\STB_App\STB_App\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\Tudor\Desktop\Facultate\anul 3\App_BD\App_stb\STB_App\STB_App\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\Tudor\Desktop\Facultate\anul 3\App_BD\App_stb\STB_App\STB_App\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\Tudor\Desktop\Facultate\anul 3\App_BD\App_stb\STB_App\STB_App\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+C:\Users\Tudor\Desktop\Facultate\anul 3\App_BD\App_stb\STB_App\STB_App\bin\Debug\Microsoft.Bcl.HashCode.xml
+C:\Users\Tudor\Desktop\Facultate\anul 3\App_BD\App_stb\STB_App\STB_App\bin\Debug\Microsoft.Data.SqlClient.pdb
+C:\Users\Tudor\Desktop\Facultate\anul 3\App_BD\App_stb\STB_App\STB_App\bin\Debug\Microsoft.Data.SqlClient.xml
+C:\Users\Tudor\Desktop\Facultate\anul 3\App_BD\App_stb\STB_App\STB_App\bin\Debug\Microsoft.EntityFrameworkCore.xml
+C:\Users\Tudor\Desktop\Facultate\anul 3\App_BD\App_stb\STB_App\STB_App\bin\Debug\Microsoft.EntityFrameworkCore.Abstractions.xml
+C:\Users\Tudor\Desktop\Facultate\anul 3\App_BD\App_stb\STB_App\STB_App\bin\Debug\Microsoft.EntityFrameworkCore.Design.xml
+C:\Users\Tudor\Desktop\Facultate\anul 3\App_BD\App_stb\STB_App\STB_App\bin\Debug\Microsoft.EntityFrameworkCore.Relational.xml
+C:\Users\Tudor\Desktop\Facultate\anul 3\App_BD\App_stb\STB_App\STB_App\bin\Debug\Microsoft.EntityFrameworkCore.SqlServer.xml
+C:\Users\Tudor\Desktop\Facultate\anul 3\App_BD\App_stb\STB_App\STB_App\bin\Debug\Microsoft.Extensions.Caching.Abstractions.xml
+C:\Users\Tudor\Desktop\Facultate\anul 3\App_BD\App_stb\STB_App\STB_App\bin\Debug\Microsoft.Extensions.Caching.Memory.xml
+C:\Users\Tudor\Desktop\Facultate\anul 3\App_BD\App_stb\STB_App\STB_App\bin\Debug\Microsoft.Extensions.Configuration.xml
+C:\Users\Tudor\Desktop\Facultate\anul 3\App_BD\App_stb\STB_App\STB_App\bin\Debug\Microsoft.Extensions.Configuration.Abstractions.xml
+C:\Users\Tudor\Desktop\Facultate\anul 3\App_BD\App_stb\STB_App\STB_App\bin\Debug\Microsoft.Extensions.Configuration.Binder.xml
+C:\Users\Tudor\Desktop\Facultate\anul 3\App_BD\App_stb\STB_App\STB_App\bin\Debug\Microsoft.Extensions.DependencyInjection.xml
+C:\Users\Tudor\Desktop\Facultate\anul 3\App_BD\App_stb\STB_App\STB_App\bin\Debug\Microsoft.Extensions.DependencyInjection.Abstractions.xml
+C:\Users\Tudor\Desktop\Facultate\anul 3\App_BD\App_stb\STB_App\STB_App\bin\Debug\Microsoft.Extensions.Logging.xml
+C:\Users\Tudor\Desktop\Facultate\anul 3\App_BD\App_stb\STB_App\STB_App\bin\Debug\Microsoft.Extensions.Logging.Abstractions.xml
+C:\Users\Tudor\Desktop\Facultate\anul 3\App_BD\App_stb\STB_App\STB_App\bin\Debug\Microsoft.Extensions.Options.xml
+C:\Users\Tudor\Desktop\Facultate\anul 3\App_BD\App_stb\STB_App\STB_App\bin\Debug\Microsoft.Extensions.Primitives.xml
+C:\Users\Tudor\Desktop\Facultate\anul 3\App_BD\App_stb\STB_App\STB_App\bin\Debug\Microsoft.Identity.Client.xml
+C:\Users\Tudor\Desktop\Facultate\anul 3\App_BD\App_stb\STB_App\STB_App\bin\Debug\Microsoft.IdentityModel.JsonWebTokens.xml
+C:\Users\Tudor\Desktop\Facultate\anul 3\App_BD\App_stb\STB_App\STB_App\bin\Debug\Microsoft.IdentityModel.Logging.xml
+C:\Users\Tudor\Desktop\Facultate\anul 3\App_BD\App_stb\STB_App\STB_App\bin\Debug\Microsoft.IdentityModel.Protocols.xml
+C:\Users\Tudor\Desktop\Facultate\anul 3\App_BD\App_stb\STB_App\STB_App\bin\Debug\Microsoft.IdentityModel.Protocols.OpenIdConnect.xml
+C:\Users\Tudor\Desktop\Facultate\anul 3\App_BD\App_stb\STB_App\STB_App\bin\Debug\Microsoft.IdentityModel.Tokens.xml
+C:\Users\Tudor\Desktop\Facultate\anul 3\App_BD\App_stb\STB_App\STB_App\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Tudor\Desktop\Facultate\anul 3\App_BD\App_stb\STB_App\STB_App\bin\Debug\System.Buffers.xml
+C:\Users\Tudor\Desktop\Facultate\anul 3\App_BD\App_stb\STB_App\STB_App\bin\Debug\System.Collections.Immutable.xml
+C:\Users\Tudor\Desktop\Facultate\anul 3\App_BD\App_stb\STB_App\STB_App\bin\Debug\System.Diagnostics.DiagnosticSource.xml
+C:\Users\Tudor\Desktop\Facultate\anul 3\App_BD\App_stb\STB_App\STB_App\bin\Debug\System.IdentityModel.Tokens.Jwt.xml
+C:\Users\Tudor\Desktop\Facultate\anul 3\App_BD\App_stb\STB_App\STB_App\bin\Debug\System.Memory.xml
+C:\Users\Tudor\Desktop\Facultate\anul 3\App_BD\App_stb\STB_App\STB_App\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\Tudor\Desktop\Facultate\anul 3\App_BD\App_stb\STB_App\STB_App\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\Tudor\Desktop\Facultate\anul 3\App_BD\App_stb\STB_App\STB_App\bin\Debug\System.Threading.Tasks.Extensions.xml
+C:\Users\Tudor\Desktop\Facultate\anul 3\App_BD\App_stb\STB_App\STB_App\bin\Debug\de\Microsoft.Data.SqlClient.resources.dll
+C:\Users\Tudor\Desktop\Facultate\anul 3\App_BD\App_stb\STB_App\STB_App\bin\Debug\es\Microsoft.Data.SqlClient.resources.dll
+C:\Users\Tudor\Desktop\Facultate\anul 3\App_BD\App_stb\STB_App\STB_App\bin\Debug\fr\Microsoft.Data.SqlClient.resources.dll
+C:\Users\Tudor\Desktop\Facultate\anul 3\App_BD\App_stb\STB_App\STB_App\bin\Debug\it\Microsoft.Data.SqlClient.resources.dll
+C:\Users\Tudor\Desktop\Facultate\anul 3\App_BD\App_stb\STB_App\STB_App\bin\Debug\ja\Microsoft.Data.SqlClient.resources.dll
+C:\Users\Tudor\Desktop\Facultate\anul 3\App_BD\App_stb\STB_App\STB_App\bin\Debug\ko\Microsoft.Data.SqlClient.resources.dll
+C:\Users\Tudor\Desktop\Facultate\anul 3\App_BD\App_stb\STB_App\STB_App\bin\Debug\pt-BR\Microsoft.Data.SqlClient.resources.dll
+C:\Users\Tudor\Desktop\Facultate\anul 3\App_BD\App_stb\STB_App\STB_App\bin\Debug\ru\Microsoft.Data.SqlClient.resources.dll
+C:\Users\Tudor\Desktop\Facultate\anul 3\App_BD\App_stb\STB_App\STB_App\bin\Debug\zh-Hans\Microsoft.Data.SqlClient.resources.dll
+C:\Users\Tudor\Desktop\Facultate\anul 3\App_BD\App_stb\STB_App\STB_App\bin\Debug\zh-Hant\Microsoft.Data.SqlClient.resources.dll
+C:\Users\Tudor\Desktop\Facultate\anul 3\App_BD\App_stb\STB_App\STB_App\obj\Debug\STB_App.csproj.AssemblyReference.cache
+C:\Users\Tudor\Desktop\Facultate\anul 3\App_BD\App_stb\STB_App\STB_App\obj\Debug\STB_App.csproj.SuggestedBindingRedirects.cache
+C:\Users\Tudor\Desktop\Facultate\anul 3\App_BD\App_stb\STB_App\STB_App\obj\Debug\MainWindow.g.cs
+C:\Users\Tudor\Desktop\Facultate\anul 3\App_BD\App_stb\STB_App\STB_App\obj\Debug\App.g.cs
+C:\Users\Tudor\Desktop\Facultate\anul 3\App_BD\App_stb\STB_App\STB_App\obj\Debug\STB_App_MarkupCompile.cache
+C:\Users\Tudor\Desktop\Facultate\anul 3\App_BD\App_stb\STB_App\STB_App\obj\Debug\STB_App_MarkupCompile.lref
+C:\Users\Tudor\Desktop\Facultate\anul 3\App_BD\App_stb\STB_App\STB_App\obj\Debug\MainWindow.baml
+C:\Users\Tudor\Desktop\Facultate\anul 3\App_BD\App_stb\STB_App\STB_App\obj\Debug\STB_App.g.resources
+C:\Users\Tudor\Desktop\Facultate\anul 3\App_BD\App_stb\STB_App\STB_App\obj\Debug\STB_App.Properties.Resources.resources
+C:\Users\Tudor\Desktop\Facultate\anul 3\App_BD\App_stb\STB_App\STB_App\obj\Debug\STB_App.csproj.GenerateResource.cache
+C:\Users\Tudor\Desktop\Facultate\anul 3\App_BD\App_stb\STB_App\STB_App\obj\Debug\STB_App.csproj.CoreCompileInputs.cache
+C:\Users\Tudor\Desktop\Facultate\anul 3\App_BD\App_stb\STB_App\STB_App\obj\Debug\STB_App.csproj.CopyComplete
+C:\Users\Tudor\Desktop\Facultate\anul 3\App_BD\App_stb\STB_App\STB_App\obj\Debug\STB_App.exe
+C:\Users\Tudor\Desktop\Facultate\anul 3\App_BD\App_stb\STB_App\STB_App\obj\Debug\STB_App.pdb
+C:\Users\Tudor\Desktop\Facultate\anul 3\App_BD\App_stb\STB_App\STB_App\obj\Debug\RegisterWindow.g.cs
+C:\Users\Tudor\Desktop\Facultate\anul 3\App_BD\App_stb\STB_App\STB_App\obj\Debug\RegisterWindow.baml
+C:\Users\Tudor\Desktop\Facultate\anul 3\App_BD\App_stb\STB_App\STB_App\obj\Debug\CentralWindow.g.cs
+C:\Users\Tudor\Desktop\Facultate\anul 3\App_BD\App_stb\STB_App\STB_App\obj\Debug\CentralWindow.baml
+C:\Users\Tudor\Desktop\Facultate\anul 3\App_BD\App_stb\STB_App\STB_App\obj\Debug\AddCard.g.cs
+C:\Users\Tudor\Desktop\Facultate\anul 3\App_BD\App_stb\STB_App\STB_App\obj\Debug\MyProfile.g.cs
+C:\Users\Tudor\Desktop\Facultate\anul 3\App_BD\App_stb\STB_App\STB_App\obj\Debug\SubscriptionHistory.g.cs
+C:\Users\Tudor\Desktop\Facultate\anul 3\App_BD\App_stb\STB_App\STB_App\obj\Debug\AddCard.baml
+C:\Users\Tudor\Desktop\Facultate\anul 3\App_BD\App_stb\STB_App\STB_App\obj\Debug\MyProfile.baml
+C:\Users\Tudor\Desktop\Facultate\anul 3\App_BD\App_stb\STB_App\STB_App\obj\Debug\SubscriptionHistory.baml
+D:\Scoala\Anul 3\SEM 1\Aplicatii baze de date\Proiect B\STB_App\STB_App\obj\Debug\STB_App.csproj.AssemblyReference.cache
+D:\Scoala\Anul 3\SEM 1\Aplicatii baze de date\Proiect B\STB_App\STB_App\obj\Debug\AddCard.g.cs
+D:\Scoala\Anul 3\SEM 1\Aplicatii baze de date\Proiect B\STB_App\STB_App\obj\Debug\CentralWindow.g.cs
+D:\Scoala\Anul 3\SEM 1\Aplicatii baze de date\Proiect B\STB_App\STB_App\obj\Debug\MainWindow.g.cs
+D:\Scoala\Anul 3\SEM 1\Aplicatii baze de date\Proiect B\STB_App\STB_App\obj\Debug\MyProfile.g.cs
+D:\Scoala\Anul 3\SEM 1\Aplicatii baze de date\Proiect B\STB_App\STB_App\obj\Debug\RegisterWindow.g.cs
+D:\Scoala\Anul 3\SEM 1\Aplicatii baze de date\Proiect B\STB_App\STB_App\obj\Debug\SubscriptionHistory.g.cs
+D:\Scoala\Anul 3\SEM 1\Aplicatii baze de date\Proiect B\STB_App\STB_App\obj\Debug\App.g.cs
+D:\Scoala\Anul 3\SEM 1\Aplicatii baze de date\Proiect B\STB_App\STB_App\obj\Debug\STB_App_MarkupCompile.cache
+D:\Scoala\Anul 3\SEM 1\Aplicatii baze de date\Proiect B\STB_App\STB_App\obj\Debug\STB_App_MarkupCompile.lref
+D:\Scoala\Anul 3\SEM 1\Aplicatii baze de date\Proiect B\STB_App\STB_App\obj\Debug\STB_App.exe
+D:\Scoala\Anul 3\SEM 1\Aplicatii baze de date\Proiect B\STB_App\STB_App\obj\Debug\STB_App.pdb
+D:\Scoala\Anul 3\SEM 1\Aplicatii baze de date\Proiect B\STB_App\STB_App\bin\Debug\STB_App.exe.config
+D:\Scoala\Anul 3\SEM 1\Aplicatii baze de date\Proiect B\STB_App\STB_App\bin\Debug\STB_App.exe
+D:\Scoala\Anul 3\SEM 1\Aplicatii baze de date\Proiect B\STB_App\STB_App\bin\Debug\STB_App.pdb
+D:\Scoala\Anul 3\SEM 1\Aplicatii baze de date\Proiect B\STB_App\STB_App\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+D:\Scoala\Anul 3\SEM 1\Aplicatii baze de date\Proiect B\STB_App\STB_App\bin\Debug\Microsoft.Bcl.HashCode.dll
+D:\Scoala\Anul 3\SEM 1\Aplicatii baze de date\Proiect B\STB_App\STB_App\bin\Debug\Microsoft.Data.SqlClient.dll
+D:\Scoala\Anul 3\SEM 1\Aplicatii baze de date\Proiect B\STB_App\STB_App\bin\Debug\Microsoft.EntityFrameworkCore.Abstractions.dll
+D:\Scoala\Anul 3\SEM 1\Aplicatii baze de date\Proiect B\STB_App\STB_App\bin\Debug\Microsoft.EntityFrameworkCore.Design.dll
+D:\Scoala\Anul 3\SEM 1\Aplicatii baze de date\Proiect B\STB_App\STB_App\bin\Debug\Microsoft.EntityFrameworkCore.dll
+D:\Scoala\Anul 3\SEM 1\Aplicatii baze de date\Proiect B\STB_App\STB_App\bin\Debug\Microsoft.EntityFrameworkCore.Relational.dll
+D:\Scoala\Anul 3\SEM 1\Aplicatii baze de date\Proiect B\STB_App\STB_App\bin\Debug\Microsoft.EntityFrameworkCore.SqlServer.dll
+D:\Scoala\Anul 3\SEM 1\Aplicatii baze de date\Proiect B\STB_App\STB_App\bin\Debug\Microsoft.Extensions.Caching.Abstractions.dll
+D:\Scoala\Anul 3\SEM 1\Aplicatii baze de date\Proiect B\STB_App\STB_App\bin\Debug\Microsoft.Extensions.Caching.Memory.dll
+D:\Scoala\Anul 3\SEM 1\Aplicatii baze de date\Proiect B\STB_App\STB_App\bin\Debug\Microsoft.Extensions.Configuration.Abstractions.dll
+D:\Scoala\Anul 3\SEM 1\Aplicatii baze de date\Proiect B\STB_App\STB_App\bin\Debug\Microsoft.Extensions.Configuration.Binder.dll
+D:\Scoala\Anul 3\SEM 1\Aplicatii baze de date\Proiect B\STB_App\STB_App\bin\Debug\Microsoft.Extensions.Configuration.dll
+D:\Scoala\Anul 3\SEM 1\Aplicatii baze de date\Proiect B\STB_App\STB_App\bin\Debug\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+D:\Scoala\Anul 3\SEM 1\Aplicatii baze de date\Proiect B\STB_App\STB_App\bin\Debug\Microsoft.Extensions.DependencyInjection.dll
+D:\Scoala\Anul 3\SEM 1\Aplicatii baze de date\Proiect B\STB_App\STB_App\bin\Debug\Microsoft.Extensions.Logging.Abstractions.dll
+D:\Scoala\Anul 3\SEM 1\Aplicatii baze de date\Proiect B\STB_App\STB_App\bin\Debug\Microsoft.Extensions.Logging.dll
+D:\Scoala\Anul 3\SEM 1\Aplicatii baze de date\Proiect B\STB_App\STB_App\bin\Debug\Microsoft.Extensions.Options.dll
+D:\Scoala\Anul 3\SEM 1\Aplicatii baze de date\Proiect B\STB_App\STB_App\bin\Debug\Microsoft.Extensions.Primitives.dll
+D:\Scoala\Anul 3\SEM 1\Aplicatii baze de date\Proiect B\STB_App\STB_App\bin\Debug\Microsoft.Identity.Client.dll
+D:\Scoala\Anul 3\SEM 1\Aplicatii baze de date\Proiect B\STB_App\STB_App\bin\Debug\Microsoft.IdentityModel.JsonWebTokens.dll
+D:\Scoala\Anul 3\SEM 1\Aplicatii baze de date\Proiect B\STB_App\STB_App\bin\Debug\Microsoft.IdentityModel.Logging.dll
+D:\Scoala\Anul 3\SEM 1\Aplicatii baze de date\Proiect B\STB_App\STB_App\bin\Debug\Microsoft.IdentityModel.Protocols.dll
+D:\Scoala\Anul 3\SEM 1\Aplicatii baze de date\Proiect B\STB_App\STB_App\bin\Debug\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+D:\Scoala\Anul 3\SEM 1\Aplicatii baze de date\Proiect B\STB_App\STB_App\bin\Debug\Microsoft.IdentityModel.Tokens.dll
+D:\Scoala\Anul 3\SEM 1\Aplicatii baze de date\Proiect B\STB_App\STB_App\bin\Debug\Newtonsoft.Json.dll
+D:\Scoala\Anul 3\SEM 1\Aplicatii baze de date\Proiect B\STB_App\STB_App\bin\Debug\System.Buffers.dll
+D:\Scoala\Anul 3\SEM 1\Aplicatii baze de date\Proiect B\STB_App\STB_App\bin\Debug\System.Collections.Immutable.dll
+D:\Scoala\Anul 3\SEM 1\Aplicatii baze de date\Proiect B\STB_App\STB_App\bin\Debug\System.ComponentModel.Annotations.dll
+D:\Scoala\Anul 3\SEM 1\Aplicatii baze de date\Proiect B\STB_App\STB_App\bin\Debug\System.Diagnostics.DiagnosticSource.dll
+D:\Scoala\Anul 3\SEM 1\Aplicatii baze de date\Proiect B\STB_App\STB_App\bin\Debug\System.IdentityModel.Tokens.Jwt.dll
+D:\Scoala\Anul 3\SEM 1\Aplicatii baze de date\Proiect B\STB_App\STB_App\bin\Debug\System.Memory.dll
+D:\Scoala\Anul 3\SEM 1\Aplicatii baze de date\Proiect B\STB_App\STB_App\bin\Debug\System.Numerics.Vectors.dll
+D:\Scoala\Anul 3\SEM 1\Aplicatii baze de date\Proiect B\STB_App\STB_App\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+D:\Scoala\Anul 3\SEM 1\Aplicatii baze de date\Proiect B\STB_App\STB_App\bin\Debug\System.Threading.Tasks.Extensions.dll
+D:\Scoala\Anul 3\SEM 1\Aplicatii baze de date\Proiect B\STB_App\STB_App\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+D:\Scoala\Anul 3\SEM 1\Aplicatii baze de date\Proiect B\STB_App\STB_App\bin\Debug\Microsoft.Bcl.HashCode.xml
+D:\Scoala\Anul 3\SEM 1\Aplicatii baze de date\Proiect B\STB_App\STB_App\bin\Debug\Microsoft.Data.SqlClient.pdb
+D:\Scoala\Anul 3\SEM 1\Aplicatii baze de date\Proiect B\STB_App\STB_App\bin\Debug\Microsoft.Data.SqlClient.xml
+D:\Scoala\Anul 3\SEM 1\Aplicatii baze de date\Proiect B\STB_App\STB_App\bin\Debug\Microsoft.EntityFrameworkCore.xml
+D:\Scoala\Anul 3\SEM 1\Aplicatii baze de date\Proiect B\STB_App\STB_App\bin\Debug\Microsoft.EntityFrameworkCore.Abstractions.xml
+D:\Scoala\Anul 3\SEM 1\Aplicatii baze de date\Proiect B\STB_App\STB_App\bin\Debug\Microsoft.EntityFrameworkCore.Design.xml
+D:\Scoala\Anul 3\SEM 1\Aplicatii baze de date\Proiect B\STB_App\STB_App\bin\Debug\Microsoft.EntityFrameworkCore.Relational.xml
+D:\Scoala\Anul 3\SEM 1\Aplicatii baze de date\Proiect B\STB_App\STB_App\bin\Debug\Microsoft.EntityFrameworkCore.SqlServer.xml
+D:\Scoala\Anul 3\SEM 1\Aplicatii baze de date\Proiect B\STB_App\STB_App\bin\Debug\Microsoft.Extensions.Caching.Abstractions.xml
+D:\Scoala\Anul 3\SEM 1\Aplicatii baze de date\Proiect B\STB_App\STB_App\bin\Debug\Microsoft.Extensions.Caching.Memory.xml
+D:\Scoala\Anul 3\SEM 1\Aplicatii baze de date\Proiect B\STB_App\STB_App\bin\Debug\Microsoft.Extensions.Configuration.xml
+D:\Scoala\Anul 3\SEM 1\Aplicatii baze de date\Proiect B\STB_App\STB_App\bin\Debug\Microsoft.Extensions.Configuration.Abstractions.xml
+D:\Scoala\Anul 3\SEM 1\Aplicatii baze de date\Proiect B\STB_App\STB_App\bin\Debug\Microsoft.Extensions.Configuration.Binder.xml
+D:\Scoala\Anul 3\SEM 1\Aplicatii baze de date\Proiect B\STB_App\STB_App\bin\Debug\Microsoft.Extensions.DependencyInjection.xml
+D:\Scoala\Anul 3\SEM 1\Aplicatii baze de date\Proiect B\STB_App\STB_App\bin\Debug\Microsoft.Extensions.DependencyInjection.Abstractions.xml
+D:\Scoala\Anul 3\SEM 1\Aplicatii baze de date\Proiect B\STB_App\STB_App\bin\Debug\Microsoft.Extensions.Logging.xml
+D:\Scoala\Anul 3\SEM 1\Aplicatii baze de date\Proiect B\STB_App\STB_App\bin\Debug\Microsoft.Extensions.Logging.Abstractions.xml
+D:\Scoala\Anul 3\SEM 1\Aplicatii baze de date\Proiect B\STB_App\STB_App\bin\Debug\Microsoft.Extensions.Options.xml
+D:\Scoala\Anul 3\SEM 1\Aplicatii baze de date\Proiect B\STB_App\STB_App\bin\Debug\Microsoft.Extensions.Primitives.xml
+D:\Scoala\Anul 3\SEM 1\Aplicatii baze de date\Proiect B\STB_App\STB_App\bin\Debug\Microsoft.Identity.Client.xml
+D:\Scoala\Anul 3\SEM 1\Aplicatii baze de date\Proiect B\STB_App\STB_App\bin\Debug\Microsoft.IdentityModel.JsonWebTokens.xml
+D:\Scoala\Anul 3\SEM 1\Aplicatii baze de date\Proiect B\STB_App\STB_App\bin\Debug\Microsoft.IdentityModel.Logging.xml
+D:\Scoala\Anul 3\SEM 1\Aplicatii baze de date\Proiect B\STB_App\STB_App\bin\Debug\Microsoft.IdentityModel.Protocols.xml
+D:\Scoala\Anul 3\SEM 1\Aplicatii baze de date\Proiect B\STB_App\STB_App\bin\Debug\Microsoft.IdentityModel.Protocols.OpenIdConnect.xml
+D:\Scoala\Anul 3\SEM 1\Aplicatii baze de date\Proiect B\STB_App\STB_App\bin\Debug\Microsoft.IdentityModel.Tokens.xml
+D:\Scoala\Anul 3\SEM 1\Aplicatii baze de date\Proiect B\STB_App\STB_App\bin\Debug\Newtonsoft.Json.xml
+D:\Scoala\Anul 3\SEM 1\Aplicatii baze de date\Proiect B\STB_App\STB_App\bin\Debug\System.Buffers.xml
+D:\Scoala\Anul 3\SEM 1\Aplicatii baze de date\Proiect B\STB_App\STB_App\bin\Debug\System.Collections.Immutable.xml
+D:\Scoala\Anul 3\SEM 1\Aplicatii baze de date\Proiect B\STB_App\STB_App\bin\Debug\System.Diagnostics.DiagnosticSource.xml
+D:\Scoala\Anul 3\SEM 1\Aplicatii baze de date\Proiect B\STB_App\STB_App\bin\Debug\System.IdentityModel.Tokens.Jwt.xml
+D:\Scoala\Anul 3\SEM 1\Aplicatii baze de date\Proiect B\STB_App\STB_App\bin\Debug\System.Memory.xml
+D:\Scoala\Anul 3\SEM 1\Aplicatii baze de date\Proiect B\STB_App\STB_App\bin\Debug\System.Numerics.Vectors.xml
+D:\Scoala\Anul 3\SEM 1\Aplicatii baze de date\Proiect B\STB_App\STB_App\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+D:\Scoala\Anul 3\SEM 1\Aplicatii baze de date\Proiect B\STB_App\STB_App\bin\Debug\System.Threading.Tasks.Extensions.xml
+D:\Scoala\Anul 3\SEM 1\Aplicatii baze de date\Proiect B\STB_App\STB_App\bin\Debug\de\Microsoft.Data.SqlClient.resources.dll
+D:\Scoala\Anul 3\SEM 1\Aplicatii baze de date\Proiect B\STB_App\STB_App\bin\Debug\es\Microsoft.Data.SqlClient.resources.dll
+D:\Scoala\Anul 3\SEM 1\Aplicatii baze de date\Proiect B\STB_App\STB_App\bin\Debug\fr\Microsoft.Data.SqlClient.resources.dll
+D:\Scoala\Anul 3\SEM 1\Aplicatii baze de date\Proiect B\STB_App\STB_App\bin\Debug\it\Microsoft.Data.SqlClient.resources.dll
+D:\Scoala\Anul 3\SEM 1\Aplicatii baze de date\Proiect B\STB_App\STB_App\bin\Debug\ja\Microsoft.Data.SqlClient.resources.dll
+D:\Scoala\Anul 3\SEM 1\Aplicatii baze de date\Proiect B\STB_App\STB_App\bin\Debug\ko\Microsoft.Data.SqlClient.resources.dll
+D:\Scoala\Anul 3\SEM 1\Aplicatii baze de date\Proiect B\STB_App\STB_App\bin\Debug\pt-BR\Microsoft.Data.SqlClient.resources.dll
+D:\Scoala\Anul 3\SEM 1\Aplicatii baze de date\Proiect B\STB_App\STB_App\bin\Debug\ru\Microsoft.Data.SqlClient.resources.dll
+D:\Scoala\Anul 3\SEM 1\Aplicatii baze de date\Proiect B\STB_App\STB_App\bin\Debug\zh-Hans\Microsoft.Data.SqlClient.resources.dll
+D:\Scoala\Anul 3\SEM 1\Aplicatii baze de date\Proiect B\STB_App\STB_App\bin\Debug\zh-Hant\Microsoft.Data.SqlClient.resources.dll
+D:\Scoala\Anul 3\SEM 1\Aplicatii baze de date\Proiect B\STB_App\STB_App\obj\Debug\AddCard.baml
+D:\Scoala\Anul 3\SEM 1\Aplicatii baze de date\Proiect B\STB_App\STB_App\obj\Debug\CentralWindow.baml
+D:\Scoala\Anul 3\SEM 1\Aplicatii baze de date\Proiect B\STB_App\STB_App\obj\Debug\MainWindow.baml
+D:\Scoala\Anul 3\SEM 1\Aplicatii baze de date\Proiect B\STB_App\STB_App\obj\Debug\MyProfile.baml
+D:\Scoala\Anul 3\SEM 1\Aplicatii baze de date\Proiect B\STB_App\STB_App\obj\Debug\RegisterWindow.baml
+D:\Scoala\Anul 3\SEM 1\Aplicatii baze de date\Proiect B\STB_App\STB_App\obj\Debug\SubscriptionHistory.baml
+D:\Scoala\Anul 3\SEM 1\Aplicatii baze de date\Proiect B\STB_App\STB_App\obj\Debug\STB_App.g.resources
+D:\Scoala\Anul 3\SEM 1\Aplicatii baze de date\Proiect B\STB_App\STB_App\obj\Debug\STB_App.Properties.Resources.resources
+D:\Scoala\Anul 3\SEM 1\Aplicatii baze de date\Proiect B\STB_App\STB_App\obj\Debug\STB_App.csproj.GenerateResource.cache
+D:\Scoala\Anul 3\SEM 1\Aplicatii baze de date\Proiect B\STB_App\STB_App\obj\Debug\STB_App.csproj.CoreCompileInputs.cache
+D:\Scoala\Anul 3\SEM 1\Aplicatii baze de date\Proiect B\STB_App\STB_App\obj\Debug\STB_App.csproj.CopyComplete
+D:\Scoala\Anul 3\SEM 1\Aplicatii baze de date\Proiect B\STB_App\STB_App\obj\Debug\CumparareBilet.g.cs
+D:\Scoala\Anul 3\SEM 1\Aplicatii baze de date\Proiect B\STB_App\STB_App\obj\Debug\CumparareBilet.baml
+D:\Scoala\Anul 3\SEM 1\Aplicatii baze de date\Proiect B\STB_App\STB_App\obj\Debug\CumparareAbonament.g.cs
+D:\Scoala\Anul 3\SEM 1\Aplicatii baze de date\Proiect B\STB_App\STB_App\obj\Debug\CumparareAbonament.baml
+D:\Scoala\Anul 3\SEM 1\Aplicatii baze de date\Proiect B\STB_App\STB_App\obj\Debug\AdaugareCard.g.cs
+D:\Scoala\Anul 3\SEM 1\Aplicatii baze de date\Proiect B\STB_App\STB_App\obj\Debug\AdaugareCard.baml
