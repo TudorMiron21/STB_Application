@@ -6,7 +6,7 @@ using Microsoft.EntityFrameworkCore.Metadata;
 // If you have enabled NRTs for your project, then un-comment the following line:
 // #nullable disable
 
-namespace STB_App.Models
+namespace STB_App.Models2
 {
     public partial class STB_appContext : DbContext
     {
@@ -34,7 +34,7 @@ namespace STB_App.Models
             if (!optionsBuilder.IsConfigured)
             {
 #warning To protect potentially sensitive information in your connection string, you should move it out of source code. See http://go.microsoft.com/fwlink/?LinkId=723263 for guidance on storing connection strings.
-                optionsBuilder.UseSqlServer("Data Source=.;Initial Catalog=STB_app;Integrated Security=True");
+                optionsBuilder.UseSqlServer("Server=.;Database=STB_app;Trusted_Connection=True;");
             }
         }
 
@@ -84,6 +84,8 @@ namespace STB_App.Models
                     .HasMaxLength(32);
 
                 entity.Property(e => e.PhoneNumber).HasMaxLength(16);
+
+                entity.Property(e => e.PicturePath).HasMaxLength(128);
 
                 entity.Property(e => e.SecondName)
                     .IsRequired()
@@ -167,6 +169,10 @@ namespace STB_App.Models
             {
                 entity.HasKey(e => e.TicketId)
                     .HasName("PK_Ticket");
+
+                entity.Property(e => e.DataBilet)
+                    .HasColumnName("Data_bilet")
+                    .HasColumnType("date");
 
                 entity.HasOne(d => d.Person)
                     .WithMany(p => p.TicketHistory)

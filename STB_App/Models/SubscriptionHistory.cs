@@ -5,7 +5,7 @@ using System.Collections.Generic;
 // If you have enabled NRTs for your project, then un-comment the following line:
 // #nullable disable
 
-namespace STB_App.Models
+namespace STB_App.Models2
 {
     public partial class SubscriptionHistory
     {

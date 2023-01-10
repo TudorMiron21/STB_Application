@@ -5,7 +5,7 @@ using System.Collections.Generic;
 // If you have enabled NRTs for your project, then un-comment the following line:
 // #nullable disable
 
-namespace STB_App.Models
+namespace STB_App.Models2
 {
     public partial class Person
     {
@@ -24,6 +24,7 @@ namespace STB_App.Models
         public int? CategoryId { get; set; }
         public string Email { get; set; }
         public string PhoneNumber { get; set; }
+        public string PicturePath { get; set; }
 
         public virtual Category Category { get; set; }
         public virtual ICollection<CardDetails> CardDetails { get; set; }
