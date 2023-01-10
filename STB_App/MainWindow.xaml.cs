@@ -1,5 +1,5 @@
 ﻿
-using STB_App.Models;
+using STB_App.Models2;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -59,7 +59,8 @@ namespace STB_App
                         select new
                         {
                             u.Passw,
-                            u.UserName
+                            u.UserName,
+                            u.PersonId
                         };
 
             int flag = 0;
@@ -71,7 +72,7 @@ namespace STB_App
                 if (user.UserName == utilizator && user.Passw == pass)
                 {
                     flag = 1;
-                    CentralWindow objRegisterWindow = new CentralWindow(user.Passw);
+                    CentralWindow objRegisterWindow = new CentralWindow(user.PersonId);
                     objRegisterWindow.Left = this.Left;
                     objRegisterWindow.Top = this.Top;
                     objRegisterWindow.Width = this.Width;

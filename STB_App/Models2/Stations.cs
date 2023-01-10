@@ -5,21 +5,18 @@ using System.Collections.Generic;
 // If you have enabled NRTs for your project, then un-comment the following line:
 // #nullable disable
 
-namespace STB_App.Models
+namespace STB_App.Models2
 {
-    public partial class Routes
+    public partial class Stations
     {
-        public Routes()
+        public Stations()
         {
-            RefRouteSubscription = new HashSet<RefRouteSubscription>();
             RefStationRoute = new HashSet<RefStationRoute>();
-            TicketHistory = new HashSet<TicketHistory>();
         }
 
-        public int RouteId { get; set; }
+        public int StationId { get; set; }
+        public string StationName { get; set; }
 
-        public virtual ICollection<RefRouteSubscription> RefRouteSubscription { get; set; }
         public virtual ICollection<RefStationRoute> RefStationRoute { get; set; }
-        public virtual ICollection<TicketHistory> TicketHistory { get; set; }
     }
 }

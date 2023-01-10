@@ -190,7 +190,6 @@ C:\Users\paulc\OneDrive\Desktop\Aplicatii_BD_lab\ProiectLAST\STB_App\STB_App\bin
 C:\Users\paulc\OneDrive\Desktop\Aplicatii_BD_lab\ProiectLAST\STB_App\STB_App\bin\Debug\zh-Hant\Microsoft.Data.SqlClient.resources.dll
 C:\Users\paulc\OneDrive\Desktop\Aplicatii_BD_lab\ProiectLAST\STB_App\STB_App\obj\Debug\STB_App.csproj.AssemblyReference.cache
 C:\Users\paulc\OneDrive\Desktop\Aplicatii_BD_lab\ProiectLAST\STB_App\STB_App\obj\Debug\STB_App.csproj.SuggestedBindingRedirects.cache
-C:\Users\paulc\OneDrive\Desktop\Aplicatii_BD_lab\ProiectLAST\STB_App\STB_App\obj\Debug\AddCard.g.cs
 C:\Users\paulc\OneDrive\Desktop\Aplicatii_BD_lab\ProiectLAST\STB_App\STB_App\obj\Debug\CentralWindow.g.cs
 C:\Users\paulc\OneDrive\Desktop\Aplicatii_BD_lab\ProiectLAST\STB_App\STB_App\obj\Debug\MainWindow.g.cs
 C:\Users\paulc\OneDrive\Desktop\Aplicatii_BD_lab\ProiectLAST\STB_App\STB_App\obj\Debug\MyProfile.g.cs
@@ -199,7 +198,6 @@ C:\Users\paulc\OneDrive\Desktop\Aplicatii_BD_lab\ProiectLAST\STB_App\STB_App\obj
 C:\Users\paulc\OneDrive\Desktop\Aplicatii_BD_lab\ProiectLAST\STB_App\STB_App\obj\Debug\App.g.cs
 C:\Users\paulc\OneDrive\Desktop\Aplicatii_BD_lab\ProiectLAST\STB_App\STB_App\obj\Debug\STB_App_MarkupCompile.cache
 C:\Users\paulc\OneDrive\Desktop\Aplicatii_BD_lab\ProiectLAST\STB_App\STB_App\obj\Debug\STB_App_MarkupCompile.lref
-C:\Users\paulc\OneDrive\Desktop\Aplicatii_BD_lab\ProiectLAST\STB_App\STB_App\obj\Debug\AddCard.baml
 C:\Users\paulc\OneDrive\Desktop\Aplicatii_BD_lab\ProiectLAST\STB_App\STB_App\obj\Debug\CentralWindow.baml
 C:\Users\paulc\OneDrive\Desktop\Aplicatii_BD_lab\ProiectLAST\STB_App\STB_App\obj\Debug\MainWindow.baml
 C:\Users\paulc\OneDrive\Desktop\Aplicatii_BD_lab\ProiectLAST\STB_App\STB_App\obj\Debug\MyProfile.baml
@@ -222,3 +220,13 @@ C:\Users\paulc\OneDrive\Desktop\Aplicatii_BD_lab\ProiectLAST\STB_App\STB_App\obj
 C:\Users\paulc\OneDrive\Desktop\Aplicatii_BD_lab\ProiectLAST\STB_App\STB_App\obj\Debug\Map.baml
 C:\Users\paulc\OneDrive\Desktop\Aplicatii_BD_lab\ProiectLAST\STB_App\STB_App\obj\Debug\ShowRoutes.g.cs
 C:\Users\paulc\OneDrive\Desktop\Aplicatii_BD_lab\ProiectLAST\STB_App\STB_App\obj\Debug\ShowRoutes.baml
+C:\Users\paulc\OneDrive\Desktop\Aplicatii_BD_lab\ProiectLAST\STB_App\STB_App\obj\Debug\AdaugareCard.g.cs
+C:\Users\paulc\OneDrive\Desktop\Aplicatii_BD_lab\ProiectLAST\STB_App\STB_App\obj\Debug\CumparareAbonament.g.cs
+C:\Users\paulc\OneDrive\Desktop\Aplicatii_BD_lab\ProiectLAST\STB_App\STB_App\obj\Debug\CumparareBilet.g.cs
+C:\Users\paulc\OneDrive\Desktop\Aplicatii_BD_lab\ProiectLAST\STB_App\STB_App\obj\Debug\Path_Window.g.cs
+C:\Users\paulc\OneDrive\Desktop\Aplicatii_BD_lab\ProiectLAST\STB_App\STB_App\obj\Debug\TicketHistoy.g.cs
+C:\Users\paulc\OneDrive\Desktop\Aplicatii_BD_lab\ProiectLAST\STB_App\STB_App\obj\Debug\AdaugareCard.baml
+C:\Users\paulc\OneDrive\Desktop\Aplicatii_BD_lab\ProiectLAST\STB_App\STB_App\obj\Debug\CumparareAbonament.baml
+C:\Users\paulc\OneDrive\Desktop\Aplicatii_BD_lab\ProiectLAST\STB_App\STB_App\obj\Debug\CumparareBilet.baml
+C:\Users\paulc\OneDrive\Desktop\Aplicatii_BD_lab\ProiectLAST\STB_App\STB_App\obj\Debug\Path_Window.baml
+C:\Users\paulc\OneDrive\Desktop\Aplicatii_BD_lab\ProiectLAST\STB_App\STB_App\obj\Debug\TicketHistoy.baml

@@ -5,8 +5,271 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:STB_App"
         mc:Ignorable="d"
-        Title="SubscriptionHistory" Height="450" Width="800">
-    <Grid>
-        
-    </Grid>
+        WindowStyle="None"
+        AllowsTransparency="True"
+        Background="Transparent"
+        Title="MainWindow" Height="547" Width="963" 
+        MouseDown="Window_MouseDown"
+        >
+
+
+    <Border x:Name="BorderImg" CornerRadius="30" >
+        <Border.Background>
+            <ImageBrush ImageSource="Images\loginImg.png" Stretch="UniformToFill" AlignmentY="Top"/>
+        </Border.Background>
+
+
+
+        <Border CornerRadius="30">
+
+            <Border.Background>
+                <SolidColorBrush Color="#FF62704D" Opacity="0.9"/>
+            </Border.Background>
+            <Grid >
+                <Grid.RowDefinitions >
+                    <RowDefinition  Height="25"/>
+
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="30"/>
+                </Grid.RowDefinitions>
+
+                <StackPanel Orientation="Vertical" VerticalAlignment="Top" Grid.Row="1" Width="500" Margin="0,70,0,0">
+                    <!--<DataGrid Height="332" SelectionMode="Extended" x:Name="McDataGrid" Width="494"/>-->
+
+                    <StackPanel Orientation="Horizontal" VerticalAlignment="Top" HorizontalAlignment="Center">
+                        <TextBlock Text="Istoric Abonamente" Foreground="Black" FontSize="20" Margin="10,0,0,15" />
+
+                    </StackPanel>
+
+                    
+                    
+                    <ListView ItemsSource="{Binding Subscription}" Name="history" ScrollViewer.HorizontalScrollBarVisibility="Disabled" ScrollViewer.VerticalScrollBarVisibility="Visible">
+
+                        <ListView.View>
+                            <GridView>
+                                <GridViewColumn DisplayMemberBinding="{Binding Id}" Header="Id" Width="50"/>
+                                <GridViewColumn DisplayMemberBinding="{Binding Route}" Header="Rute" Width="100"/>
+                                <GridViewColumn DisplayMemberBinding="{Binding DateStart}" Header="Data Abonament Start" Width="170"/>
+                                <GridViewColumn DisplayMemberBinding="{Binding DateFinish}" Header="Data Abonament Final " Width="170"/>
+                               
+                            </GridView>
+                        </ListView.View>
+                        <ListView.ItemTemplate>
+                            <DataTemplate>
+                                <StackPanel Orientation="Horizontal">
+                                    <TextBlock Text="{Binding Id}" Margin="5,5,20,5"/>
+                                    <TextBlock Text="{Binding Route}" TextAlignment="Center" />
+                                    <TextBlock Text="{Binding DateStart}" Margin="5"/>
+                                    <TextBlock Text="{Binding DateFinish}" Margin="5"/>
+                                    
+                                </StackPanel>
+                            </DataTemplate>
+                        </ListView.ItemTemplate>
+                        <ListView.ItemContainerStyle>
+                            <Style TargetType="ListViewItem">
+                                <Setter Property="HorizontalContentAlignment" Value="Stretch"/>
+                                <Setter Property="VerticalContentAlignment" Value="Center"/>
+                                <Setter Property="Padding" Value="5"/>
+                                <Setter Property="Margin" Value="5"/>
+                                <Setter Property="Background" Value="#FF62704D"/>
+                            </Style>
+                        </ListView.ItemContainerStyle>
+                        <ListView.Resources>
+                            <Style TargetType="GridViewColumnHeader">
+                                <Setter Property="Background" Value="#FF62704D"/>
+                                <Setter Property="Foreground" Value="White"/>
+                                <Setter Property="HorizontalContentAlignment" Value="Center"/>
+                                <Setter Property="VerticalContentAlignment" Value="Center"/>
+                                <Setter Property="Padding" Value="5"/>
+                                <Setter Property="Margin" Value="5"/>
+                            </Style>
+                        </ListView.Resources>
+                    </ListView>
+
+                    <!--<ListView ItemsSource="{Binding Tickets}" Name="history" ScrollViewer.HorizontalScrollBarVisibility="Disabled" ScrollViewer.VerticalScrollBarVisibility="Visible" Width="420">
+                        <ListView.View>
+                            <GridView>
+                                <GridViewColumn DisplayMemberBinding="{Binding Id}" Header="IdCalatorie" Width="100"/>
+                                <GridViewColumn DisplayMemberBinding="{Binding Route}" Header="Ruta" Width="70"/>
+                                <GridViewColumn DisplayMemberBinding="{Binding Date}" Header="Data Calatorie" Width="220"/>
+                            </GridView>
+                        </ListView.View>
+                        <ListView.ItemTemplate>
+                            <DataTemplate>
+                                <StackPanel Orientation="Horizontal">
+                                    <TextBlock Text="{Binding IdCalatorie}" Margin="5"/>
+                                    <TextBlock Text="{Binding Route}" Margin="5"/>
+                                    <TextBlock Text="{Binding Date}" Margin="5"/>
+                                </StackPanel>
+                            </DataTemplate>
+                        </ListView.ItemTemplate>
+                        <ListView.ItemContainerStyle>
+                            <Style TargetType="ListViewItem">
+                                <Setter Property="HorizontalContentAlignment" Value="Stretch"/>
+                                <Setter Property="VerticalContentAlignment" Value="Center"/>
+                                <Setter Property="Padding" Value="5"/>
+                                <Setter Property="Margin" Value="5"/>
+                                <Setter Property="Background" Value="#FF62704D"/>
+                            </Style>
+                        </ListView.ItemContainerStyle>
+                        <ListView.Resources>
+                            <Style TargetType="GridViewColumnHeader">
+                                <Setter Property="Background" Value="#FF62704D"/>
+                                <Setter Property="Foreground" Value="White"/>
+                                <Setter Property="HorizontalContentAlignment" Value="Center"/>
+                                <Setter Property="VerticalContentAlignment" Value="Center"/>
+                                <Setter Property="Padding" Value="5"/>
+                                <Setter Property="Margin" Value="5"/>
+                            </Style>
+                        </ListView.Resources>
+                    </ListView>-->
+
+                    <!--<ListBox Name="listBoxZone" ItemsSource="{Binding TheList, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" Margin="0,20,0,20" Padding="11,20">
+                        <ListBox.Resources>
+                            <Style TargetType="Border">
+                                <Setter Property="CornerRadius" Value="15"/>
+                            </Style>
+                        </ListBox.Resources>
+                        <ListBox.ItemTemplate>
+                            <DataTemplate>
+                                <TextBlock Text="{Binding TheText, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"></TextBlock>
+                            </DataTemplate>
+                        </ListBox.ItemTemplate>
+                        <ListBox.ItemContainerStyle>
+                            <Style TargetType="ListBoxItem">
+                                <Style.Resources>
+                                    <Style TargetType="Border">
+                                        <Setter Property="CornerRadius" Value="5"/>
+                                    </Style>
+                                </Style.Resources>
+                            </Style>
+                        </ListBox.ItemContainerStyle>
+                    </ListBox>-->
+
+
+                    <!--<ListBox Name="listBoxZone" ItemsSource="{Binding TheList, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" Margin="0,20,0,20" Padding="11,20">
+                        <ListBox.Resources>
+                            <Style TargetType="ListBox" BasedOn="{StaticResource {x:Type ListBox}}">
+                                <Setter Property="Template">
+                                    <Setter.Value>
+                                        <ControlTemplate TargetType="{x:Type ListBox}">
+                                            <Border CornerRadius="15" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="{TemplateBinding BorderThickness}" Background="{TemplateBinding Background}">
+                                                <ScrollViewer Focusable="false">
+                                                    <StackPanel IsItemsHost="true" />
+                                                </ScrollViewer>
+                                            </Border>
+                                        </ControlTemplate>
+                                    </Setter.Value>
+                                </Setter>
+                            </Style>
+                        </ListBox.Resources>
+                        <ListBox.ItemTemplate>
+                            <DataTemplate>
+                                <TextBlock Text="{Binding TheText, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"></TextBlock>
+                            </DataTemplate>
+                        </ListBox.ItemTemplate>-->
+                    <!--</ListBox>-->
+
+                    <!--<ListBox Name="listBox">
+                        <ListBox.Template>
+                            <ControlTemplate>
+                                <ListView ItemsSource="{Binding Items}">
+                                    <ListView.View>
+                                        <GridView>
+                                            <GridViewColumn DisplayMemberBinding="{Binding Column1}" Header="Column 1" Width="100" />
+                                            <GridViewColumn DisplayMemberBinding="{Binding Column2}" Header="Column 2" Width="100" />
+                                            <GridViewColumn DisplayMemberBinding="{Binding Column3}" Header="Column 3" Width="100" />
+                                        </GridView>
+                                    </ListView.View>
+                                </ListView>
+                            </ControlTemplate>
+                        </ListBox.Template>
+                    </ListBox>-->
+
+
+
+
+                    <!--<ListView x:Name="listView" ItemsSource="{Binding Customers}">
+                        <ListView.Template>
+                            <ControlTemplate TargetType="{x:Type ListView}">
+                                <Border CornerRadius="10" BorderBrush="Black" BorderThickness="1">
+                                    <ItemsPresenter />
+                                    
+                                </Border>
+                                
+                            </ControlTemplate>
+                            
+                        </ListView.Template>
+                    </ListView>-->
+
+
+                </StackPanel>
+
+                <StackPanel Grid.Row="2" Width="930" Margin="0,0,0,0">
+
+                    <Button x:Name="Back" Width="100" Height="20" HorizontalAlignment="Right" Margin="0,0,0,0" Background="OrangeRed" Opacity="0.9" Click="back_Click" Content="Inapoi">
+                        <Button.Template>
+                            <ControlTemplate TargetType="Button">
+                                <Border x:Name="border" Background="OrangeRed"  BorderBrush="Black" BorderThickness="1" CornerRadius="6">
+                                    <ContentPresenter Content="Inapoi" HorizontalAlignment="Center" VerticalAlignment="Center" />
+                                </Border>
+                                <ControlTemplate.Triggers>
+                                    <Trigger Property="IsMouseOver" Value="True">
+                                        <Setter TargetName="border" Property="Background" Value="Orange" />
+                                    </Trigger>
+                                    <Trigger Property="IsPressed" Value="True">
+                                        <Setter TargetName="border" Property="Background" Value="Azure" />
+                                    </Trigger>
+                                </ControlTemplate.Triggers>
+                            </ControlTemplate>
+                        </Button.Template>
+                    </Button>
+
+                </StackPanel>
+
+
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" >
+                    <Button x:Name="minimize" Content="____" Width="20" Height="20" Margin="0,5,10,0" Background="Orange" Click="minimize_Click">
+                        <Button.Template>
+                            <ControlTemplate TargetType="Button">
+                                <Border CornerRadius="10" Background="Orange">
+                                </Border>
+                            </ControlTemplate>
+                        </Button.Template>
+                    </Button>
+                    <Button x:Name="close" Content="Close" Width="20" Height="20" Margin="0,5,20,0" Click="close_Click" RenderTransformOrigin="0.5,0.5">
+                        <Button.RenderTransform>
+                            <TransformGroup>
+                                <ScaleTransform/>
+                                <SkewTransform/>
+                                <RotateTransform Angle="-4.384"/>
+                                <TranslateTransform/>
+                            </TransformGroup>
+                        </Button.RenderTransform>
+                        <Button.Template>
+                            <ControlTemplate TargetType="Button">
+                                <Border x:Name="border" CornerRadius="10" Background="Red">
+                                </Border>
+                                <ControlTemplate.Triggers>
+                                    <Trigger Property="IsMouseOver" Value="True">
+                                        <Setter TargetName="border" Property="Background" Value="OrangeRed" />
+                                    </Trigger>
+                                </ControlTemplate.Triggers>
+                            </ControlTemplate>
+
+                        </Button.Template>
+
+                    </Button>
+
+                </StackPanel>
+
+
+            </Grid>
+
+        </Border>
+
+
+    </Border>
+
 </Window>
+

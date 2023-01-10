@@ -179,27 +179,36 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Compile Include="AddCard.xaml.cs">
-      <DependentUpon>AddCard.xaml</DependentUpon>
+    <Compile Include="AdaugareCard.xaml.cs">
+      <DependentUpon>AdaugareCard.xaml</DependentUpon>
     </Compile>
     <Compile Include="CentralWindow.xaml.cs">
       <DependentUpon>CentralWindow.xaml</DependentUpon>
     </Compile>
+    <Compile Include="CumparareAbonament.xaml.cs">
+      <DependentUpon>CumparareAbonament.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="CumparareBilet.xaml.cs">
+      <DependentUpon>CumparareBilet.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Map.xaml.cs">
       <DependentUpon>Map.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Models\CardDetails.cs" />
-    <Compile Include="Models\Category.cs" />
-    <Compile Include="Models\Person.cs" />
-    <Compile Include="Models\RefRouteSubscription.cs" />
-    <Compile Include="Models\RefStationRoute.cs" />
-    <Compile Include="Models\Routes.cs" />
-    <Compile Include="Models\Stations.cs" />
-    <Compile Include="Models\STB_appContext.cs" />
-    <Compile Include="Models\SubscriptionHistory.cs" />
-    <Compile Include="Models\TicketHistory.cs" />
+    <Compile Include="Models2\CardDetails.cs" />
+    <Compile Include="Models2\Category.cs" />
+    <Compile Include="Models2\Person.cs" />
+    <Compile Include="Models2\RefRouteSubscription.cs" />
+    <Compile Include="Models2\RefStationRoute.cs" />
+    <Compile Include="Models2\Routes.cs" />
+    <Compile Include="Models2\Stations.cs" />
+    <Compile Include="Models2\STB_appContext.cs" />
+    <Compile Include="Models2\SubscriptionHistory.cs" />
+    <Compile Include="Models2\TicketHistory.cs" />
     <Compile Include="MyProfile.xaml.cs">
       <DependentUpon>MyProfile.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Path_Window.xaml.cs">
+      <DependentUpon>Path_Window.xaml</DependentUpon>
     </Compile>
     <Compile Include="RegisterWindow.xaml.cs">
       <DependentUpon>RegisterWindow.xaml</DependentUpon>
@@ -210,13 +219,26 @@
     <Compile Include="SubscriptionHistory.xaml.cs">
       <DependentUpon>SubscriptionHistory.xaml</DependentUpon>
     </Compile>
-    <Page Include="AddCard.xaml">
-      <SubType>Designer</SubType>
+    <Compile Include="SubscriptionRow.cs" />
+    <Compile Include="TicketHistoy.xaml.cs">
+      <DependentUpon>TicketHistoy.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="TicketRow.cs" />
+    <Page Include="AdaugareCard.xaml">
       <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
     </Page>
     <Page Include="CentralWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="CumparareAbonament.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="CumparareBilet.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
     </Page>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
@@ -235,20 +257,28 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="MyProfile.xaml">
-      <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Path_Window.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
     </Page>
     <Page Include="RegisterWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="ShowRoutes.xaml">
-      <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
     </Page>
     <Page Include="SubscriptionHistory.xaml">
-      <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="TicketHistoy.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
     </Page>
   </ItemGroup>
   <ItemGroup>
@@ -290,6 +320,18 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Images\logo_transparent.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\harta-metrou.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\MAP.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\profile.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\plus.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="..\packages\Microsoft.Data.SqlClient.SNI.1.1.0\build\net46\Microsoft.Data.SqlClient.SNI.targets" Condition="Exists('..\packages\Microsoft.Data.SqlClient.SNI.1.1.0\build\net46\Microsoft.Data.SqlClient.SNI.targets')" />

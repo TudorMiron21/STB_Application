@@ -1,4 +1,4 @@
-﻿using STB_App.Models;
+﻿using STB_App.Models2;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -34,54 +34,85 @@ namespace STB_App
            InitializeComponent();
         }
 
+        public CentralWindow(int PersonId) : this()
+        {
+            this.PersonId = PersonId;
+            InitializeComponent();
+        }
+
         private void buy_ticket_Click(object sender, RoutedEventArgs e)
         {
+            CumparareBilet objCumparareBilet = new CumparareBilet(this.PersonId);
+            objCumparareBilet.Top = this.Top;
+            objCumparareBilet.Left = this.Left;
+            objCumparareBilet.Width = this.Width;
+            objCumparareBilet.Height = this.Height;
 
+            objCumparareBilet.Show();
+            this.Close();
         }
 
         private void buy_subscription_Click(object sender, RoutedEventArgs e)
         {
+            CumparareAbonament objCumparareAbonament = new CumparareAbonament(this.PersonId);
+            objCumparareAbonament.Top = this.Top;
+            objCumparareAbonament.Left = this.Left;
+            objCumparareAbonament.Width = this.Width;
+            objCumparareAbonament.Height = this.Height;
 
+            objCumparareAbonament.Show();
+            this.Close();
         }
 
         private void ticket_history_Click(object sender, RoutedEventArgs e)
         {
+            TicketHistoy objIstoricBilete = new TicketHistoy(this.PersonId);
+            objIstoricBilete.Top = this.Top;
+            objIstoricBilete.Left = this.Left;
+            objIstoricBilete.Width = this.Width;
+            objIstoricBilete.Height = this.Height;
+
+            objIstoricBilete.Show();
+            this.Close();
 
         }
 
         private void subscription_history_Click(object sender, RoutedEventArgs e)
         {
+            SubscriptionHistory objIstoricAbonamente = new SubscriptionHistory(this.PersonId);
+            objIstoricAbonamente.Top = this.Top;
+            objIstoricAbonamente.Left = this.Left;
+            objIstoricAbonamente.Width = this.Width;
+            objIstoricAbonamente.Height = this.Height;
 
+            objIstoricAbonamente.Show();
+            this.Close();
         }
 
         private void my_profile_Click(object sender, RoutedEventArgs e)
         {
-            STB_appContext STB_context = new STB_appContext();
-            var user = from u in STB_context.Person
-                       where u.Passw == this.password
-                       select new
-                       {
-                            u.PersonId,
-                            u.Passw,
-                            u.UserName,
-                            u.Email,
-                            u.CategoryId,
-                            u.FirstName,
-                            u.SecondName,
-                            u.PhoneNumber
-                       };
-            this.PersonId = user.First().PersonId;
+            MyProfile objMyProfile = new MyProfile(this.PersonId);
 
-            MyProfile objMyProfile = new MyProfile(this.PersonId,(int)user.First().CategoryId,user.First().Email,user.First().PhoneNumber,user.First().FirstName,user.First().SecondName,user.First().UserName);
-
-            this.Visibility = Visibility.Hidden;
+            objMyProfile.Top = this.Top;
+            objMyProfile.Left = this.Left;
+            objMyProfile.Width = this.Width;
+            objMyProfile.Height = this.Height;
+            
             objMyProfile.Show();
 
+            this.Close();
         }
 
         private void insert_card_Click(object sender, RoutedEventArgs e)
         {
+            AdaugareCard adaugareCard = new AdaugareCard(this.PersonId);
+            adaugareCard.Top = this.Top;
+            adaugareCard.Left = this.Left;
+            adaugareCard.Width = this.Width;
+            adaugareCard.Height = this.Height;
 
+            adaugareCard.Show();
+            this.Close();
         }
 
         private void minimize_Click(object sender, RoutedEventArgs e)

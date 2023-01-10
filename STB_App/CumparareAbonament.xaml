@@ -1,0 +1,314 @@
+﻿<Window x:Class="STB_App.CumparareAbonament"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        xmlns:local="clr-namespace:STB_App"
+        mc:Ignorable="d"
+        WindowStyle="None"
+        AllowsTransparency="True"
+        Background="Transparent"
+        Title="MainWindow"
+        Height="547"
+        Width="963"
+        MouseDown="Window_MouseDown">
+
+    <Border x:Name="BorderImg"
+            CornerRadius="30">
+        <Border.Background>
+            <ImageBrush ImageSource="Images\loginImg.png"
+                        Stretch="UniformToFill"
+                        AlignmentY="Top" />
+        </Border.Background>
+
+        <Border CornerRadius="30">
+
+            <Border.Background>
+                <SolidColorBrush Color="#FF62704D"
+                                 Opacity="0.9" />
+            </Border.Background>
+
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition  Height="25" />
+
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="30" />
+                </Grid.RowDefinitions>
+
+                <StackPanel Orientation="Vertical"
+                            VerticalAlignment="Top"
+                            Grid.Row="1"
+                            Width="500"
+                            Margin="0,50,0,0">
+                    <TextBlock Text="Selectati data de incepere a abonamentului"
+                               HorizontalAlignment="Center"
+                               Foreground="Black"
+                               FontSize="15"
+                               Margin="10,0,0,0" />
+
+                    <DatePicker 
+                                Name="Calendar"
+                                Width="140"
+                                materialDesign:HintAssist.Hint="Pick Date"
+               
+                                Margin="0,20,0,40"
+                                materialDesign:DatePickerAssist.OutlinedBorderInactiveThickness="2"
+                                materialDesign:HintAssist.FloatingOffset="0,-22"
+                                Style="{StaticResource MaterialDesignOutlinedDatePicker}" />
+
+                    <StackPanel Orientation="Horizontal"
+                                VerticalAlignment="Top"
+                                Grid.Row="1"
+                                Width="500"
+                                Margin="0,0,0,0">
+                        <TextBlock Text="Rute disponibile"
+                                   HorizontalAlignment="Left"
+                                   Foreground="Black"
+                                   FontSize="15"
+                                   Margin="30,0,0,0" />
+                        <TextBlock Text="Rute selectate"
+                                   HorizontalAlignment="Right"
+                                   Foreground="Black"
+                                   FontSize="15"
+                                   Margin="230,0,0,0" />
+                    </StackPanel>
+
+                    <StackPanel Orientation="Horizontal"
+                                VerticalAlignment="Top"
+                                Grid.Row="1"
+                                Width="500"
+                                Margin="0,5,0,0">
+                        <ComboBox Margin="0,0,0,13"
+                                  Name="cbRuteCumparareAbonament"
+                                  HorizontalAlignment="Center"
+                                  VerticalAlignment="Center"
+                                  Width="180"
+                                  Height="30"></ComboBox>
+                        <ComboBox Margin="140,0,0,13"
+                                  Name="cbRuteAdaugate"
+                                  HorizontalAlignment="Center"
+                                  VerticalAlignment="Center"
+                                  Width="180"
+                                  Height="30"></ComboBox>
+                    </StackPanel>
+
+                    <StackPanel Orientation="Horizontal"
+                                VerticalAlignment="Top"
+                                Grid.Row="1"
+                                Width="500"
+                                Margin="0,30,0,0">
+                        <Button x:Name="Adaugare_ruta"
+                                Content="Adauga ruta"
+                                Width="180"
+                                Height="30"
+                                HorizontalAlignment="Left"
+                                VerticalAlignment="Center"
+                                Margin="0,0,0,0"
+                                Background="OrangeRed"
+                                Opacity="0.9"
+                                Click="adauga_ruta_Click">
+                            <Button.Template>
+                                <ControlTemplate TargetType="{x:Type Button}">
+                                    <Border x:Name="border"
+                                            Background="OrangeRed"
+                                            BorderBrush="Black"
+                                            BorderThickness="1"
+                                            CornerRadius="10">
+                                        <ContentPresenter Content="Adauga ruta"
+                                                          HorizontalAlignment="Center"
+                                                          VerticalAlignment="Center" />
+                                    </Border>
+                                    <ControlTemplate.Triggers>
+                                        <Trigger Property="IsMouseOver"
+                                                 Value="True">
+                                            <Setter TargetName="border"
+                                                    Property="Background"
+                                                    Value="Orange" />
+                                        </Trigger>
+                                        <Trigger Property="IsPressed"
+                                                 Value="True">
+                                            <Setter TargetName="border"
+                                                    Property="Background"
+                                                    Value="Purple" />
+                                        </Trigger>
+                                    </ControlTemplate.Triggers>
+                                </ControlTemplate>
+                            </Button.Template>
+                        </Button>
+
+                        <Button x:Name="EliminaRuta"
+                                Content="EliminaRuta"
+                                Width="180"
+                                Height="30"
+                                HorizontalAlignment="Right"
+                                VerticalAlignment="Center"
+                                Margin="140,0,0,0"
+                                Background="OrangeRed"
+                                Opacity="0.9"
+                                Click="elimina_ruta_Click">
+                            <Button.Template>
+                                <ControlTemplate TargetType="{x:Type Button}">
+                                    <Border x:Name="border"
+                                            Background="OrangeRed"
+                                            BorderBrush="Black"
+                                            BorderThickness="1"
+                                            CornerRadius="10">
+                                        <ContentPresenter Content="EliminaRuta"
+                                                          HorizontalAlignment="Center"
+                                                          VerticalAlignment="Center" />
+                                    </Border>
+                                    <ControlTemplate.Triggers>
+                                        <Trigger Property="IsMouseOver"
+                                                 Value="True">
+                                            <Setter TargetName="border"
+                                                    Property="Background"
+                                                    Value="Orange" />
+                                        </Trigger>
+                                        <Trigger Property="IsPressed"
+                                                 Value="True">
+                                            <Setter TargetName="border"
+                                                    Property="Background"
+                                                    Value="Purple" />
+                                        </Trigger>
+                                    </ControlTemplate.Triggers>
+                                </ControlTemplate>
+                            </Button.Template>
+                        </Button>
+
+
+                    </StackPanel>
+
+                    <Button x:Name="PlatesteAbonament"
+                            Content="Plateste"
+                            Width="180"
+                            Height="30"
+                            HorizontalAlignment="Center"
+                            VerticalAlignment="Center"
+                            Margin="0,30,0,0"
+                            Background="OrangeRed"
+                            Opacity="0.9"
+                            Click="plateste_abonament_Click">
+                        <Button.Template>
+                            <ControlTemplate TargetType="{x:Type Button}">
+                                <Border x:Name="border"
+                                        Background="OrangeRed"
+                                        BorderBrush="Black"
+                                        BorderThickness="1"
+                                        CornerRadius="10">
+                                    <ContentPresenter Content="Plateste"
+                                                      HorizontalAlignment="Center"
+                                                      VerticalAlignment="Center" />
+                                </Border>
+                                <ControlTemplate.Triggers>
+                                    <Trigger Property="IsMouseOver"
+                                             Value="True">
+                                        <Setter TargetName="border"
+                                                Property="Background"
+                                                Value="Orange" />
+                                    </Trigger>
+                                    <Trigger Property="IsPressed"
+                                             Value="True">
+                                        <Setter TargetName="border"
+                                                Property="Background"
+                                                Value="Purple" />
+                                    </Trigger>
+                                </ControlTemplate.Triggers>
+                            </ControlTemplate>
+                        </Button.Template>
+                    </Button>
+
+                </StackPanel>
+
+                <StackPanel Orientation="Horizontal"
+                            HorizontalAlignment="Right">
+                    <Button x:Name="minimize"
+                            Content="____"
+                            Width="20"
+                            Height="20"
+                            Margin="0,5,10,0"
+                            Background="Orange"
+                            Click="minimize_Click">
+                        <Button.Template>
+                            <ControlTemplate TargetType="Button">
+                                <Border CornerRadius="10"
+                                        Background="Orange">
+                                </Border>
+                            </ControlTemplate>
+                        </Button.Template>
+                    </Button>
+                    <Button x:Name="close"
+                            Content="Close"
+                            Width="20"
+                            Height="20"
+                            Margin="0,5,20,0"
+                            Click="close_Click">
+                        <Button.Template>
+                            <ControlTemplate TargetType="Button">
+                                <Border x:Name="border"
+                                        CornerRadius="10"
+                                        Background="Red">
+                                </Border>
+                                <ControlTemplate.Triggers>
+                                    <Trigger Property="IsMouseOver"
+                                             Value="True">
+                                        <Setter TargetName="border"
+                                                Property="Background"
+                                                Value="OrangeRed" />
+                                    </Trigger>
+                                </ControlTemplate.Triggers>
+                            </ControlTemplate>
+
+                        </Button.Template>
+
+                    </Button>
+
+                </StackPanel>
+
+                <StackPanel Orientation="Horizontal"
+                            HorizontalAlignment="Right"
+                            Grid.Row="2">
+                    <Button x:Name="Inapoi"
+                            Content="Inapoi"
+                            Width="100"
+                            Height="20"
+                            HorizontalAlignment="Right"
+                            VerticalAlignment="Bottom"
+                            Margin="0,0,15,10"
+                            Background="OrangeRed"
+                            Opacity="0.9"
+                            Click="inapoi_Click">
+                        <Button.Template>
+                            <ControlTemplate TargetType="{x:Type Button}">
+                                <Border x:Name="border"
+                                        Background="OrangeRed"
+                                        BorderBrush="Black"
+                                        BorderThickness="1"
+                                        CornerRadius="6">
+                                    <ContentPresenter Content="Inapoi"
+                                                      HorizontalAlignment="Center"
+                                                      VerticalAlignment="Center" />
+                                </Border>
+                                <ControlTemplate.Triggers>
+                                    <Trigger Property="IsMouseOver"
+                                             Value="True">
+                                        <Setter TargetName="border"
+                                                Property="Background"
+                                                Value="Orange" />
+                                    </Trigger>
+                                    <Trigger Property="IsPressed"
+                                             Value="True">
+                                        <Setter TargetName="border"
+                                                Property="Background"
+                                                Value="Purple" />
+                                    </Trigger>
+                                </ControlTemplate.Triggers>
+                            </ControlTemplate>
+                        </Button.Template>
+                    </Button>
+                </StackPanel>
+            </Grid>
+        </Border>
+    </Border>
+</Window>

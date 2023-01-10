@@ -1,4 +1,4 @@
-﻿using STB_App.Models;
+﻿using STB_App.Models2;
 using System;
 using System.Collections.Generic;
 using System.IO.Packaging;
@@ -39,16 +39,31 @@ namespace STB_App
         {
             InitializeComponent();
         }
-        public MyProfile(int PersonId, int categoryId, string email, string phone ,string LastName , string FirstName, string Useraname) : this()
+        public MyProfile(int PersonId) : this()
         {
-           
+
+            STB_appContext STB_context = new STB_appContext();
+            var user = from u in STB_context.Person
+                       where u.PersonId == this.PersonId
+                       select new
+                       {
+                           u.PersonId,
+                           u.Passw,
+                           u.UserName,
+                           u.Email,
+                           u.CategoryId,
+                           u.FirstName,
+                           u.SecondName,
+                           u.PhoneNumber
+                       };
+
             this.PersonId = PersonId;
-            CategoryId = categoryId;
-            Email = email;
-            Phone = phone;
-            this.LastName = LastName;
-            this.FirstName = FirstName;
-            this.UserName = Useraname;
+            CategoryId = (int)user.First().CategoryId;
+            Email = user.First().Email;
+            Phone = user.First().PhoneNumber;
+            this.LastName = user.First().SecondName;
+            this.FirstName = user.First().FirstName;
+            this.UserName = user.First().UserName;
 
             this.Username_content.Text = this.UserName;
             this.FirstName_content.Text = this.FirstName;
@@ -57,7 +72,7 @@ namespace STB_App
             this.Phone_content.Text = this.Phone;
 
 
-            
+
             //this.FavouriteRoute_content = 
 
             using (var context = new STB_appContext())
@@ -68,14 +83,52 @@ namespace STB_App
 
                 this.NoSubscriptions_content.Text = no_subscription.Count().ToString();
 
-                var no_tickets=from subs in context.TicketHistory
-                               where subs.PersonId == PersonId
-                               select subs;
+                var no_tickets = from subs in context.TicketHistory
+                                 where subs.PersonId == PersonId
+                                 select subs;
                 this.NoTickets_content.Text = no_tickets.Count().ToString();
 
 
-                /*var favourite_route = from person in context.Person
-                                      select */
+                //var favourite_route = (from person in context.Person
+                //                       join ticket in context.TicketHistory
+                //                         on person.PersonId equals ticket.PersonId
+                //                       join route in context.Routes
+                //                         on ticket.RouteId equals route.RouteId
+                //                       where person.PersonId == 2
+                //                       group person by new
+                //                       {
+                //                           route.RouteId
+
+                //                       } into routeGroup
+
+                //                       let output = new
+                //                       {
+                //                           ruta_fav = routeGroup.Count(),
+                //                           id = routeGroup.Key.RouteId
+                //                       }
+
+                //                       orderby output.ruta_fav descending
+                //                       select output).ToList();
+
+                //foreach (var route in favourite_route)
+                //{
+                //    Console.WriteLine($"{route.ruta_fav},{route.id}");
+                //}
+
+                var favourite_route = (from person in context.Person
+                                       join ticket in context.TicketHistory
+                                         on person.PersonId equals ticket.PersonId
+                                       join route in context.Routes
+                                         on ticket.RouteId equals route.RouteId
+                                       where person.PersonId == 2
+                                       select new
+                                       {
+                                           personId = person.PersonId,
+                                           routeId = route.RouteId,
+                                       }).GroupBy(r => r.routeId).Select(r =>r.Key).Count();
+
+                this.FavouriteRoute_content.Text = favourite_route.ToString();
+
             }
 
             InitializeComponent();
@@ -102,13 +155,22 @@ namespace STB_App
 
         private void back_Click(object sender, RoutedEventArgs e)
         {
+            CentralWindow obj = new CentralWindow(PersonId);
+            obj.Top = this.Top;
+            obj.Left = this.Left;
+            obj.Width = this.Width;
+            obj.Height = this.Height;
 
-            foreach (Window window in Application.Current.Windows)
-                if (window.GetType() == typeof(CentralWindow))
-                    window.Visibility = Visibility.Visible;
-            this.Visibility = Visibility.Hidden;
+            obj.Show();
+            this.Close();
+
         }
 
-
+        private void add_Click(object sender, RoutedEventArgs e)
+        {
+            Path_Window path_win = new Path_Window();
+            path_win.Show();
+            //this.Visibility = Visibility.Hidden;
+        }
     }
 }

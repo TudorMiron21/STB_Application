@@ -10,11 +10,11 @@ none
 false
 DEBUG;TRACE
 C:\Users\paulc\OneDrive\Desktop\Aplicatii_BD_lab\ProiectLAST\STB_App\STB_App\App.xaml
-81127803027
+12-413137085
 
-22-391982831
+28-1658770706
 57431124768
-AddCard.xaml;CentralWindow.xaml;MainWindow.xaml;Map.xaml;MyProfile.xaml;RegisterWindow.xaml;ShowRoutes.xaml;SubscriptionHistory.xaml;
+AdaugareCard.xaml;CentralWindow.xaml;CumparareAbonament.xaml;CumparareBilet.xaml;MainWindow.xaml;Map.xaml;MyProfile.xaml;Path_Window.xaml;RegisterWindow.xaml;ShowRoutes.xaml;SubscriptionHistory.xaml;TicketHistoy.xaml;
 
 False
 
