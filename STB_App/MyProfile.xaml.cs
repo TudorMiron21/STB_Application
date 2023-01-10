@@ -1,4 +1,4 @@
-﻿using STB_App.Models;
+﻿using STB_App.Models2;
 using System;
 using System.Collections.Generic;
 using System.IO.Packaging;
@@ -79,7 +79,9 @@ namespace STB_App
                 //                         on person.PersonId equals ticket.PersonId
                 //                       join route in context.Routes
                 //                         on ticket.RouteId equals route.RouteId
-                //                       group person by new {
+                //                       where person.PersonId == 2
+                //                       group person by new
+                //                       {
                 //                           route.RouteId
 
                 //                       } into routeGroup
@@ -89,13 +91,29 @@ namespace STB_App
                 //                           ruta_fav = routeGroup.Count(),
                 //                           id = routeGroup.Key.RouteId
                 //                       }
+
                 //                       orderby output.ruta_fav descending
                 //                       select output).ToList();
-                
-                //foreach(var route in favourite_route)
+
+                //foreach (var route in favourite_route)
                 //{
                 //    Console.WriteLine($"{route.ruta_fav},{route.id}");
                 //}
+
+                var favourite_route = (from person in context.Person
+                                       join ticket in context.TicketHistory
+                                         on person.PersonId equals ticket.PersonId
+                                       join route in context.Routes
+                                         on ticket.RouteId equals route.RouteId
+                                       where person.PersonId == 2
+                                       select new
+                                       {
+                                           personId = person.PersonId,
+                                           routeId = route.RouteId,
+                                       }).GroupBy(r => r.routeId).Select(r =>r.Key).Count();
+
+                this.FavouriteRoute_content.Text = favourite_route.ToString();
+
             }
 
             InitializeComponent();
@@ -126,12 +144,14 @@ namespace STB_App
             foreach (Window window in Application.Current.Windows)
                 if (window.GetType() == typeof(CentralWindow))
                     window.Visibility = Visibility.Visible;
-            this.Visibility = Visibility.Hidden;
+            this.Close();
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
+        private void add_Click(object sender, RoutedEventArgs e)
         {
-
+            Path_Window path_win = new Path_Window();
+            path_win.Show();
+            //this.Visibility = Visibility.Hidden;
         }
     }
 }

@@ -1,4 +1,4 @@
-﻿using STB_App.Models;
+﻿using STB_App.Models2;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -23,16 +23,13 @@ namespace STB_App
         public string password { get; set; }
         public int PersonId { get; set; }
 
-        public CentralWindow()
+        public CentralWindow(int perrsonId)
         {
             InitializeComponent();
+            this.PersonId = perrsonId;
+
         }
 
-        public CentralWindow(string password):this()
-        {
-           this.password = password;
-           InitializeComponent();
-        }
 
         private void buy_ticket_Click(object sender, RoutedEventArgs e)
         {
@@ -46,11 +43,14 @@ namespace STB_App
 
         private void ticket_history_Click(object sender, RoutedEventArgs e)
         {
-
+            TicketHistoy obj = new TicketHistoy(this.PersonId);
+            obj.Show();
         }
 
         private void subscription_history_Click(object sender, RoutedEventArgs e)
         {
+            SubscriptionHistory obj = new SubscriptionHistory(this.PersonId);
+            obj.Show();
 
         }
 
@@ -58,7 +58,7 @@ namespace STB_App
         {
             STB_appContext STB_context = new STB_appContext();
             var user = from u in STB_context.Person
-                       where u.Passw == this.password
+                       where u.PersonId == this.PersonId
                        select new
                        {
                             u.PersonId,
